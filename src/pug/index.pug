@@ -1,0 +1,16 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'index'
+  - var title = 'CSSフレームワーク'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  //- include include/_header.pug
+  header(role='banner')
+  main(role='main')
+    section
+      .l-container
+        .l-row
+          h1 Hello,World!

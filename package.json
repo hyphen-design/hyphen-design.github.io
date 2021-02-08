@@ -1,0 +1,40 @@
+{
+  "name": "FrameWork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@glidejs/glide": "^3.2.3",
+    "browser-sync": "^2.24.7",
+    "gulp": "^4.0.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-header": "^2.0.5",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sass-glob": "^1.0.9",
+    "jquery": "^3.3.1",
+    "jstransformer-escape-html": "^1.1.0",
+    "jstransformer-highlight": "^2.0.0",
+    "jstransformer-html-beautify": "0.0.1",
+    "jstransformer-pug": "^0.3.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-stream": "^5.1.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "dependencies": {
+    "yarn": "^1.22.10"
+  }
+}

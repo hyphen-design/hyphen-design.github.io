@@ -1,0 +1,23 @@
+head
+  meta(charset="utf-8")
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(name='format-detection', content='telephone=no')
+  title #{title} | #{sitename}
+  //- meta(name='robots',content='noindex')
+  meta(name='description', content=description)
+  meta(property='og:title', content=title)
+  case page
+    when 'index'
+      meta(property='og:type', content='website')
+    default
+      meta(property='og:type', content='article')
+  meta(property='og:description', content=description)
+  meta(property='og:site_name', content=title)
+  meta(property='og:locale', content='ja')
+  link(rel='shortcut icon',href='common/favicon.ico')
+  meta(name='format-detection', content='telephone=no')
+  block head-individual
+    meta(property='og:image', content='common/image/og/ogp-image.jpg')
+    meta(property='og:url', content='https://www.google.com/?hl=ja')
+  link(rel='stylesheet', href='common/css/style.css')

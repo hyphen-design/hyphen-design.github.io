@@ -1,0 +1,12 @@
+doctype html
+block vars
+html(lang='ja',prefix='og:http://ogp.me/ns#')
+  include _head.pug
+  body(class=page)
+    .l-wrapper
+      //- include _header.pug
+      block content
+        main.l-main
+          article
+            p デフォルトのコンテンツです。
+      //- include _footer.pug
