@@ -33,7 +33,7 @@ var pugOptions = {
 
 //Sass
 gulp.task('scss', function () {
-  gulp.src(paths.scss + '**/*.scss')
+  return gulp.src(paths.scss + '**/*.scss')
     .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
     .pipe(sassGlob())
     .pipe(sass({sassOptions}))
@@ -71,7 +71,7 @@ gulp.task('browser-sync', () => {
   });
   gulp.watch(paths.js + "*.js", gulp.task('reload'));
   gulp.watch(paths.html + "*.html", gulp.task('reload'));
-  gulp.watch(paths.css + "*.css", gulp.task('reload'));
+  gulp.watch(paths.css + "*.css", gulp.series('reload'));
 });
 gulp.task("reload", function (done) {
   browserSync.reload();
@@ -85,4 +85,4 @@ gulp.task('watch', function () {
   gulp.watch(paths.appjs + '**/*.js', gulp.task('webpack'));
 });
 
-gulp.task('default', gulp.series( gulp.parallel('browser-sync', 'watch')));
+gulp.task('default', gulp.parallel('browser-sync', 'watch'));

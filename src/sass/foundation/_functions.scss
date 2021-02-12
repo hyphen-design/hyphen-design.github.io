@@ -1,0 +1,37 @@
+@function tie($basename, $suffix){
+  @return #{$basename}-#{$suffix};
+}
+
+@function screen-size($size){
+
+  $map-value: map-get($screen-size, $size);
+  $unit: unit($map-value);
+
+  @if $unit != ''{
+    @return $map-value;
+  }
+  @else {
+    @if $map-value > 0 {
+      @return #{$map-value}px;
+    } @else {
+      @return $map-value;
+    }
+  }
+}
+
+@function screen-size-minus1($size){
+
+  $map-value: map-get($screen-size, $size)-1;
+  $unit: unit($map-value);
+
+  @if $unit != ''{
+    @return $map-value;
+  }
+  @else {
+    @if $map-value > 0 {
+      @return #{$map-value}px;
+    } @else {
+      @return $map-value;
+    }
+  }
+}

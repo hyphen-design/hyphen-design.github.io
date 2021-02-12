@@ -1,0 +1,209 @@
+// Color Variables
+
+$red:         $red-500 !default;
+$pink:        $pink-500 !default;
+$purple:      $purple-500 !default;
+$deeppurple:  $deep-purple-500 !default;
+$indigo:      $indigo-500 !default;
+$blue:        $blue-500 !default;
+$lightblue:   $light-blue-500 !default;
+$cyan:        $cyan-500 !default;
+$teal:        $teal-500 !default;
+$green:       $green-500 !default;
+$lightgreen:  $light-green-500 !default;
+$lime:        $lime-500 !default;
+$yellow:      $yellow-500 !default;
+$amber:       $amber-500 !default;
+$orange:      $orange-500 !default;
+$deeporange:  $deep-orange-500 !default;
+$brown:       $brown-500 !default;
+$gray:        $grey-500 !default;
+$bluegray:    $blue-grey-500 !default;
+
+// Your Site Theme Colors
+$primary:       $teal !default;
+$secondary:     $pink !default;
+$tertiary:      $grey-500 !default;
+$success:       $green !default;
+$info:          $blue !default;
+$warning:       $amber !default;
+$danger:        $red !default;
+$light:         $grey-100 !default;
+$dark:          $grey-800 !default;
+
+// Color Variations
+$pageColors: (
+  red: #{$red},
+  pink: #{$pink},
+  purple: #{$purple},
+  deeppurple: #{$deeppurple},
+  indigo: #{$indigo},
+  blue: #{$blue},
+  lightblue: #{$lightblue},
+  cyan: #{$cyan},
+  teal: #{$teal},
+  green: #{$green},
+  lightgreen: #{$lightgreen},
+  lime: #{$lime},
+  yellow: #{$yellow},
+  amber: #{$amber},
+  orange: #{$orange},
+  deeporange: #{$deeporange},
+  brown: #{$brown},
+  bluegray: #{$bluegray},
+  white: #{$white},
+  black: #{$black}
+);
+
+$pageColorsDilute: ( //薄めの色
+  red: #{rgba($red,.75)},
+  pink: #{rgba($pink,.75)},
+  purple: #{rgba($purple,.75)},
+  deeppurple: #{rgba($deeppurple,.75)},
+  indigo: #{rgba($indigo,.75)},
+  blue: #{rgba($blue,.75)},
+  lightblue: #{rgba($lightblue,.75)},
+  cyan: #{rgba($cyan,.75)},
+  teal: #{rgba($teal,.75)},
+  green: #{rgba($green,.75)},
+  lightgreen: #{rgba($lightgreen,.75)},
+  lime: #{rgba($lime,.75)},
+  yellow: #{rgba($yellow,.75)},
+  amber: #{rgba($amber,.75)},
+  orange: #{rgba($orange,.75)},
+  deeporange: #{rgba($deeporange,.75)},
+  brown: #{rgba($brown,.75)},
+  bluegray: #{rgba($bluegray,.75)},
+  white: #{rgba($white,.75)},
+  black: #{rgba($black,.75)}
+);
+
+// Spacer
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)
+  ),
+  $spacers
+);
+
+// Size
+$sizes: () !default;
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+  ),
+  $sizes
+);
+
+// Settings for the `<body>` element.
+$body-bg:         $white !default;
+$body-color:      $grey-800 !default;
+$wrapper-bg:      $grey-100 !default;
+
+// Style anchor elements.
+$link-color:      theme-color("primary") !default;
+
+// Paragraphs
+$paragraph-margin-bottom:   1.5rem !default;
+
+// Grid breakpoints & flexbox
+$breakpoint-size-sm: 540px !default;
+$breakpoint-size-md: 768px !default;
+$breakpoint-size-lg: 900px !default;
+$breakpoint-size-xl: 1200px !default;
+
+// Max-width
+$max-screen-width: $breakpoint-size-xl !default;
+
+// Screen-size(breakpoints)
+$screen-size: (
+  xs: 0,
+  sm: $breakpoint-size-sm,
+  md: $breakpoint-size-md,
+  lg: $breakpoint-size-lg,
+  xl: $breakpoint-size-xl
+) !default;
+$main-breakpoint: lg !default;
+$grid-columns: 12 !default;
+$grid-gutter: 20px !default;
+$alias: true !default;
+$order: true !default;
+
+// others
+$line-height-lg:              1.75 !default;
+$line-height-sm:              1.25 !default;
+
+$border-width:                1px !default;
+$border-color:                $grey-300 !default;
+$border-radius:               .25rem !default;
+$border-radius-lg:            .3rem !default;
+$border-radius-sm:            .2rem !default;
+
+$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
+$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+
+$transition-base:             all .2s ease-in-out !default;
+$transition-fade:             opacity .15s linear !default;
+$transition-collapse:         height .35s ease !default;
+
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+$font-size-base:              10px !default; // Assumes the browser default, typically `16px`
+$font-size-xxs:               1.0rem !default;
+$font-size-xs:                1.2rem !default;
+$font-size-sm:                1.4rem !default;
+$font-size-md:                1.6rem !default;
+$font-size-lg:                2.0rem !default;
+$font-size-xl:                3.0rem !default;
+$font-size-xxl:               4.6rem !default;
+$font-size-xxxl:              6.0rem !default;
+
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5 !default;
+
+$h1-font-size:                $font-size-base * 4 !default;
+$h2-font-size:                $font-size-base * 3 !default;
+$h3-font-size:                $font-size-base * 2 !default;
+$h4-font-size:                $font-size-base * 1 !default;
+
+$headings-type-size:          $font-size-base * 3 !default;
+
+$headings-margin-bottom:      ($spacer / 2) !default;
+$headings-font-family:        inherit !default;
+$headings-font-weight:        500 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              inherit !default;
+
+$text-shadow: 0 0 4px $grey-800 !default;
+
+// table
+$table-bg: $wrapper-bg !default;
+$table-head-bg: $grey-200 !default;
+$table-head-color: $dark !default;
+$table-border-color: $grey-400 !default;
+$table-accent-bg: $grey-200 !default;
+$table-hover-bg: $grey-300 !default;
+$table-border-width: 1px !default;
+$table-cell-padding: ($spacer / 2) ($spacer / 1.5) !default;
+$table-cell-padding-sm: ($spacer / 4) ($spacer / 3) !default;
+
+// others
+$header-height: 70px !default;

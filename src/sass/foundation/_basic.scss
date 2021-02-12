@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  position: relative;
+  background: $white;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}

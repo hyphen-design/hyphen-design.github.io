@@ -1,0 +1,12 @@
+.l-col,
+[class*=l-col-]{
+  width: 100%;
+  @include col-gutter();
+}
+
+@each $size in map-keys($screen-size){
+  @include col-style($size);
+  @if $order {
+    @include order-style($size);
+  }
+}

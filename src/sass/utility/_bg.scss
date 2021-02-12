@@ -1,0 +1,9 @@
+@each $index, $color in $pageColors {
+  .u-bg-#{$index} {
+    background: $color;
+  }
+}
+
+.u-bg-graylight {
+  background: $grey-200;
+}

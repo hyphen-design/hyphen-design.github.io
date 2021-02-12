@@ -1,4 +1,4 @@
-// Required
+Required
 var $ = require('jquery');
 
 // Functions

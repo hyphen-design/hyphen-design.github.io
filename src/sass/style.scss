@@ -1,10 +1,11 @@
 // foundation
-// @import "foundation/_variables.scss";
-// @import "foundation/_reboot.scss";
-// @import "foundation/_functions.scss";
-// @import "foundation/_mixin.scss";
-// @import "foundation/_basic.scss";
+@import "foundation/_moftone.scss";
+@import "foundation/_variables.scss";
+@import "foundation/_reboot.scss";
+@import "foundation/_functions.scss";
+@import "foundation/_mixin.scss";
+@import "foundation/_basic.scss";
 
-html {
-  font-size: 10px;
-}
+@import "layout/_*.scss";
+
+@import "utility/_*.scss";
