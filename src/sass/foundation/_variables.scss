@@ -146,8 +146,8 @@ $line-height-sm:              1.25 !default;
 
 $border-width:                1px !default;
 $border-color:                $grey-300 !default;
-$border-radius:               .25rem !default;
-$border-radius-lg:            .3rem !default;
+$border-radius:               .4rem !default;
+$border-radius-lg:            .8rem !default;
 $border-radius-sm:            .2rem !default;
 
 $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
@@ -167,10 +167,10 @@ $font-size-xxs:               1.0rem !default;
 $font-size-xs:                1.2rem !default;
 $font-size-sm:                1.4rem !default;
 $font-size-md:                1.6rem !default;
-$font-size-lg:                2.0rem !default;
-$font-size-xl:                3.0rem !default;
-$font-size-xxl:               4.6rem !default;
-$font-size-xxxl:              6.0rem !default;
+$font-size-lg:                2.2rem !default;
+$font-size-xl:                3.6rem !default;
+$font-size-xxl:               5.0rem !default;
+$font-size-xxxl:              7.2rem !default;
 
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
@@ -178,11 +178,6 @@ $font-weight-bold:            700 !default;
 
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
-
-$h1-font-size:                $font-size-base * 4 !default;
-$h2-font-size:                $font-size-base * 3 !default;
-$h3-font-size:                $font-size-base * 2 !default;
-$h4-font-size:                $font-size-base * 1 !default;
 
 $headings-type-size:          $font-size-base * 3 !default;
 

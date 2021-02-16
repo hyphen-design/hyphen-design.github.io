@@ -10,6 +10,48 @@ block content
   //- include include/_header.pug
   header(role='banner')
     .p-header
+      .p-header-symbol
+        .c-logo
+          a(href="#").c-logo-primary HYPHEN
+          span.c-logo-secondary Design Office
+      .p-header-menu
+        input#nav-input.p-header-menu-checkbox(type='checkbox')
+        label#nav-open.p-header-menu-trigger(for='nav-input')
+          span
+          span
+          span
+        label#nav-close.p-header-menu-close(for='nav-input')
+        nav(role='navigation').p-header-menu-navigation
+          ul.u-list-reset
+            li
+              a(href='#') MENU
+            li
+              a(href='#') MENU
+            li
+              a(href='#') MENU
+            li
+              a(href='#') MENU
+            li
+              a(href='#') MENU
+          ul.u-list-reset
+            li
+              a(href='#') sub
+            li
+              a(href='#') sub
+  nav.c-horizontal-navigation
+    ul.u-list-reset
+      li
+        a(href='#') menu01
+      li
+        a(href='#') menu02
+      li
+        a(href='#') menu03
+      li
+        a(href='#') menu04
+      li
+        a(href='#') menu05
+      li
+        a(href='#') menu06    
   main(role='main')
     section.u-bg-graylight
       .l-container
@@ -24,4 +66,115 @@ block content
             h2 h2text
             h3 h3text
             h4 h4text
-          
+    section
+      .l-container
+        h2 Button
+        h3 ボタンのサイズ
+        p
+          button.c-button 標準
+          button.c-button.c-button--large サイズ大
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              button.c-button 標準
+              button.c-button.c-button--large サイズ大
+        h3 ボタンの形
+        p
+          button.c-button.c-button--rounded 角丸ボタン
+          button.c-button.c-button--pills 丸ボタン
+          button.c-button.c-button--outline アウトライン
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              button.c-button.c-button--rounded 角丸ボタン
+              button.c-button.c-button--pills 丸ボタン
+              button.c-button.c-button--outline アウトライン
+        h3 ボタンの色
+        p
+          button.c-button.c-button--red red
+          button.c-button.c-button--pink pink
+          button.c-button.c-button--purple purple
+          button.c-button.c-button--deeppurple deeppurple
+          button.c-button.c-button--indigo indigo
+          button.c-button.c-button--blue blue
+          button.c-button.c-button--lightblue lightblue
+          button.c-button.c-button--cyan cyan
+          button.c-button.c-button--teal teal
+          button.c-button.c-button--green green
+          button.c-button.c-button--lightgreen lightgreen
+          button.c-button.c-button--lime lime
+          button.c-button.c-button--yellow yellow
+          button.c-button.c-button--amber amber
+          button.c-button.c-button--orange orange
+          button.c-button.c-button--deeporange deeporange
+          button.c-button.c-button--brown brown
+          button.c-button.c-button--bluegray bluegray
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              button.c-button.c-button--red red
+              button.c-button.c-button--pink pink
+              button.c-button.c-button--purple purple
+              button.c-button.c-button--deeppurple deeppurple
+              button.c-button.c-button--indigo indigo
+              button.c-button.c-button--blue blue
+              button.c-button.c-button--lightblue lightblue
+              button.c-button.c-button--cyan cyan
+              button.c-button.c-button--teal teal
+              button.c-button.c-button--green green
+              button.c-button.c-button--lightgreen lightgreen
+              button.c-button.c-button--lime lime
+              button.c-button.c-button--yellow yellow
+              button.c-button.c-button--amber amber
+              button.c-button.c-button--orange orange
+              button.c-button.c-button--deeporange deeporange
+              button.c-button.c-button--brown brown
+              button.c-button.c-button--bluegray bluegray   
+        h3 ボタンの色(アウトライン)
+        p
+          button.c-button.c-button--outline.c-button--red red
+          button.c-button.c-button--outline.c-button--pink pink
+          button.c-button.c-button--outline.c-button--purple purple
+          button.c-button.c-button--outline.c-button--deeppurple deeppurple
+          button.c-button.c-button--outline.c-button--indigo indigo
+          button.c-button.c-button--outline.c-button--blue blue
+          button.c-button.c-button--outline.c-button--lightblue lightblue
+          button.c-button.c-button--outline.c-button--cyan cyan
+          button.c-button.c-button--outline.c-button--teal teal
+          button.c-button.c-button--outline.c-button--green green
+          button.c-button.c-button--outline.c-button--lightgreen lightgreen
+          button.c-button.c-button--outline.c-button--lime lime
+          button.c-button.c-button--outline.c-button--yellow yellow
+          button.c-button.c-button--outline.c-button--amber amber
+          button.c-button.c-button--outline.c-button--orange orange
+          button.c-button.c-button--outline.c-button--deeporange deeporange
+          button.c-button.c-button--outline.c-button--brown brown
+          button.c-button.c-button--outline.c-button--bluegray bluegray
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              button.c-button.c-button--outline.c-button--red red
+              button.c-button.c-button--outline.c-button--pink pink
+              button.c-button.c-button--outline.c-button--purple purple
+              button.c-button.c-button--outline.c-button--deeppurple deeppurple
+              button.c-button.c-button--outline.c-button--indigo indigo
+              button.c-button.c-button--outline.c-button--blue blue
+              button.c-button.c-button--outline.c-button--lightblue lightblue
+              button.c-button.c-button--outline.c-button--cyan cyan
+              button.c-button.c-button--outline.c-button--teal teal
+              button.c-button.c-button--outline.c-button--green green
+              button.c-button.c-button--outline.c-button--lightgreen lightgreen
+              button.c-button.c-button--outline.c-button--lime lime
+              button.c-button.c-button--outline.c-button--yellow yellow
+              button.c-button.c-button--outline.c-button--amber amber
+              button.c-button.c-button--outline.c-button--orange orange
+              button.c-button.c-button--outline.c-button--deeporange deeporange
+              button.c-button.c-button--outline.c-button--brown brown
+              button.c-button.c-button--outline.c-button--bluegray bluegray          
+        h3 ボタン横幅100％
+        p
+            button.c-button.c-button--blue.c-button--block block  
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();
