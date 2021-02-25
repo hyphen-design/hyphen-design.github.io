@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og:http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>CSSフレームワーク | hyphen.tokyo</title>
+    <meta name="description" content="サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。">
+    <meta property="og:title" content="CSSフレームワーク">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。">
+    <meta property="og:site_name" content="CSSフレームワーク">
+    <meta property="og:locale" content="ja">
+    <link rel="shortcut icon" href="common/favicon.ico">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:image" content="common/image/og/ogp-image.jpg">
+    <meta property="og:url" content="https://www.google.com/?hl=ja">
+    <link rel="stylesheet" href="common/css/style.css">
+  </head>
+  <body class="seconde">
+    <div class="l-wrapper">
+      <header role="banner">
+        <div class="p-header">
+          <div class="p-header-symbol">
+            <div class="c-logo"><a class="c-logo-primary" href="#">HYPHEN</a><span class="c-logo-secondary">Design Office</span></div>
+          </div>
+          <div class="p-header-menu">
+            <input class="p-header-menu-checkbox" id="nav-input" type="checkbox">
+            <label class="p-header-menu-trigger" id="nav-open" for="nav-input"><span></span><span></span><span></span></label>
+            <label class="p-header-menu-close" id="nav-close" for="nav-input"></label>
+            <nav class="p-header-menu-navigation" role="navigation">
+              <ul class="u-list-reset">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Component</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Utility</a></li>
+                <li><a href="#">Template</a></li>
+              </ul>
+              <ul class="u-list-reset">
+                <li><a href="#">sub</a></li>
+                <li><a href="#">sub</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main role="main">
+        <section class="u-bg-graylight">
+          <div class="l-container">
+            <div class="l-row">
+              <div class="l-col-6">
+                <h1>Hello,World!</h1>
+                <h2>h2text</h2>
+                <h3>h3text</h3>
+                <h4>h4text</h4>
+              </div>
+              <div class="l-col-6">
+                <h1>Hello,World!</h1>
+                <h2>h2text</h2>
+                <h3>h3text</h3>
+                <h4>h4text</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="l-container">
+            <h2>Button</h2>
+            <h3>ボタンのサイズ</h3>
+            <p>
+              <button class="c-button">標準</button>
+              <button class="c-button c-button--large">サイズ大</button>
+            </p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button"</span>&gt;</span>標準<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--large"</span>&gt;</span>サイズ大<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+            <h3>ボタンの形</h3>
+            <p>
+              <button class="c-button c-button--rounded">角丸ボタン</button>
+              <button class="c-button c-button--pills">丸ボタン</button>
+              <button class="c-button c-button--outline">アウトライン</button>
+            </p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--rounded"</span>&gt;</span>角丸ボタン<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--pills"</span>&gt;</span>丸ボタン<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline"</span>&gt;</span>アウトライン<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+            <h3>ボタンの色</h3>
+            <p>
+              <button class="c-button c-button--red">red</button>
+              <button class="c-button c-button--pink">pink</button>
+              <button class="c-button c-button--purple">purple</button>
+              <button class="c-button c-button--deeppurple">deeppurple</button>
+              <button class="c-button c-button--indigo">indigo</button>
+              <button class="c-button c-button--blue">blue</button>
+              <button class="c-button c-button--lightblue">lightblue</button>
+              <button class="c-button c-button--cyan">cyan</button>
+              <button class="c-button c-button--teal">teal</button>
+              <button class="c-button c-button--green">green</button>
+              <button class="c-button c-button--lightgreen">lightgreen</button>
+              <button class="c-button c-button--lime">lime</button>
+              <button class="c-button c-button--yellow">yellow</button>
+              <button class="c-button c-button--amber">amber</button>
+              <button class="c-button c-button--orange">orange</button>
+              <button class="c-button c-button--deeporange">deeporange</button>
+              <button class="c-button c-button--brown">brown</button>
+              <button class="c-button c-button--bluegray">bluegray</button>
+            </p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--red"</span>&gt;</span>red<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--pink"</span>&gt;</span>pink<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--purple"</span>&gt;</span>purple<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--deeppurple"</span>&gt;</span>deeppurple<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--indigo"</span>&gt;</span>indigo<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--blue"</span>&gt;</span>blue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--lightblue"</span>&gt;</span>lightblue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--cyan"</span>&gt;</span>cyan<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--teal"</span>&gt;</span>teal<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--green"</span>&gt;</span>green<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--lightgreen"</span>&gt;</span>lightgreen<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--lime"</span>&gt;</span>lime<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--yellow"</span>&gt;</span>yellow<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--amber"</span>&gt;</span>amber<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--orange"</span>&gt;</span>orange<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--deeporange"</span>&gt;</span>deeporange<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--brown"</span>&gt;</span>brown<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--bluegray"</span>&gt;</span>bluegray <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+            <h3>ボタンの色(アウトライン)</h3>
+            <p>
+              <button class="c-button c-button--outline c-button--red">red</button>
+              <button class="c-button c-button--outline c-button--pink">pink</button>
+              <button class="c-button c-button--outline c-button--purple">purple</button>
+              <button class="c-button c-button--outline c-button--deeppurple">deeppurple</button>
+              <button class="c-button c-button--outline c-button--indigo">indigo</button>
+              <button class="c-button c-button--outline c-button--blue">blue</button>
+              <button class="c-button c-button--outline c-button--lightblue">lightblue</button>
+              <button class="c-button c-button--outline c-button--cyan">cyan</button>
+              <button class="c-button c-button--outline c-button--teal">teal</button>
+              <button class="c-button c-button--outline c-button--green">green</button>
+              <button class="c-button c-button--outline c-button--lightgreen">lightgreen</button>
+              <button class="c-button c-button--outline c-button--lime">lime</button>
+              <button class="c-button c-button--outline c-button--yellow">yellow</button>
+              <button class="c-button c-button--outline c-button--amber">amber</button>
+              <button class="c-button c-button--outline c-button--orange">orange</button>
+              <button class="c-button c-button--outline c-button--deeporange">deeporange</button>
+              <button class="c-button c-button--outline c-button--brown">brown</button>
+              <button class="c-button c-button--outline c-button--bluegray">bluegray</button>
+            </p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--red"</span>&gt;</span>red<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--pink"</span>&gt;</span>pink<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--purple"</span>&gt;</span>purple<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--deeppurple"</span>&gt;</span>deeppurple<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--indigo"</span>&gt;</span>indigo<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--blue"</span>&gt;</span>blue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--lightblue"</span>&gt;</span>lightblue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--cyan"</span>&gt;</span>cyan<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--teal"</span>&gt;</span>teal<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--green"</span>&gt;</span>green<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--lightgreen"</span>&gt;</span>lightgreen<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--lime"</span>&gt;</span>lime<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--yellow"</span>&gt;</span>yellow<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--amber"</span>&gt;</span>amber<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--orange"</span>&gt;</span>orange<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--deeporange"</span>&gt;</span>deeporange<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--brown"</span>&gt;</span>brown<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--bluegray"</span>&gt;</span>bluegray <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+            <h3>ボタン横幅100％</h3>
+            <p>
+              <button class="c-button c-button--blue c-button--block">block  </button>
+            </p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--blue c-button--block"</span>&gt;</span>block<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+            <h3>ボタングループ</h3>
+            <div class="c-button-group">
+              <button class="c-button c-button--red">button</button>
+              <button class="c-button c-button--blue">button</button>
+            </div>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button-group"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--red"</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--blue"</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+          </div>
+        </section>
+        <section id="color">
+          <div class="l-container l-container-thin">
+            <h2>文字色</h2>
+            <hr class="u-separator-gray u-space-bottom-3">
+            <p class="u-color-red">テキストの色を替える</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-color-red"</span>&gt;</span>テキストの色を替える<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <p class="u-color-pink">テキストの色を替える</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-color-pink"</span>&gt;</span>テキストの色を替える<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <p class="u-color-purple">テキストの色を替える</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-color-purple"</span>&gt;</span>テキストの色を替える<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <p class="u-color-deeppurple">テキストの色を替える</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-color-deeppurple"</span>&gt;</span>テキストの色を替える<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <p class="u-color-indigo">テキストの色を替える</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-color-indigo"</span>&gt;</span>テキストの色を替える<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <p class="u-color-blue">テキストの色を替える</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-color-blue"</span>&gt;</span>テキストの色を替える<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <p class="u-color-lightblue">テキストの色を替える</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-color-lightblue"</span>&gt;</span>テキストの色を替える<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <p class="u-color-cyan">テキストの色を替える</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-color-cyan"</span>&gt;</span>テキストの色を替える<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <p class="u-color-teal">テキストの色を替える</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-color-teal"</span>&gt;</span>テキストの色を替える<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <p class="u-color-green">テキストの色を替える</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-color-green"</span>&gt;</span>テキストの色を替える<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <p class="u-color-lightgreen">テキストの色を替える</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-color-lightgreen"</span>&gt;</span>テキストの色を替える<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <p class="u-color-lime">テキストの色を替える</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-color-lime"</span>&gt;</span>テキストの色を替える<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <p class="u-color-yellow">テキストの色を替える</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-color-yellow"</span>&gt;</span>テキストの色を替える<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <p class="u-color-amber">テキストの色を替える</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-color-amber"</span>&gt;</span>テキストの色を替える<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <p class="u-color-orange">テキストの色を替える</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-color-orange"</span>&gt;</span>テキストの色を替える<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <p class="u-color-deeporange">テキストの色を替える</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-color-deeporange"</span>&gt;</span>テキストの色を替える<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <p class="u-color-brown">テキストの色を替える</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-color-brown"</span>&gt;</span>テキストの色を替える<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <p class="u-color-bluegray">テキストの色を替える</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-color-bluegray"</span>&gt;</span>テキストの色を替える<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+          </div>
+        </section>
+        <section id="size">
+          <div class="l-container l-container-thin">
+            <h2>文字サイズ</h2>
+            <hr class="u-separator-gray u-space-bottom-3">
+            <p class="u-font-size-xxlarge">文字サイズ 超特大</p>
+            <p class="u-font-size-xlarge">文字サイズ 特大</p>
+            <p class="u-font-size-large">文字サイズ 大</p>
+            <p class="u-font-size-medium">文字サイズ 標準</p>
+            <p class="u-font-size-small">文字サイズ 小</p>
+            <p class="u-font-size-tiny">文字サイズ 極小</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-font-size-xxlarge"</span>&gt;</span>文字サイズ 超特大<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-font-size-xlarge"</span>&gt;</span>文字サイズ 特大<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-font-size-large"</span>&gt;</span>文字サイズ 大<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-font-size-medium"</span>&gt;</span>文字サイズ 標準<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-font-size-small"</span>&gt;</span>文字サイズ 小<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-font-size-tiny"</span>&gt;</span>文字サイズ 極小<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+          </div>
+        </section>
+        <section id="weight">
+          <div class="l-container l-container-thin">
+            <h2>文字の太さ</h2>
+            <hr class="u-separator-gray u-space-bottom-3">
+            <p class="u-font-weight-normal">文字の太さ 標準</p>
+            <p class="u-font-weight-bold">文字の太さ ボールド</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-font-weight-normal"</span>&gt;</span>文字の太さ 標準<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-font-weight-bold"</span>&gt;</span>文字の太さ ボールド<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+          </div>
+        </section>
+        <section id="highlight">
+          <div class="l-container l-container-thin">
+            <h2>マーカー</h2>
+            <hr class="u-separator-gray u-space-bottom-3">
+            <p>テキストに<span class="u-marker-red">マーカー</span>を引く</p>
+            <p>テキストに<span class="u-marker-pink">マーカー</span>を引く</p>
+            <p>テキストに<span class="u-marker-purple">マーカー</span>を引く</p>
+            <p>テキストに<span class="u-marker-deeppurple">マーカー</span>を引く</p>
+            <p>テキストに<span class="u-marker-indigo">マーカー</span>を引く</p>
+            <p>テキストに<span class="u-marker-blue">マーカー</span>を引く</p>
+            <p>テキストに<span class="u-marker-lightblue">マーカー</span>を引く</p>
+            <p>テキストに<span class="u-marker-cyan">マーカー</span>を引く</p>
+            <p>テキストに<span class="u-marker-teal">マーカー</span>を引く</p>
+            <p>テキストに<span class="u-marker-green">マーカー</span>を引く</p>
+            <p>テキストに<span class="u-marker-lightgreen">マーカー</span>を引く</p>
+            <p>テキストに<span class="u-marker-lime">マーカー</span>を引く</p>
+            <p>テキストに<span class="u-marker-yellow">マーカー</span>を引く</p>
+            <p>テキストに<span class="u-marker-amber">マーカー</span>を引く</p>
+            <p>テキストに<span class="u-marker-orange">マーカー</span>を引く</p>
+            <p>テキストに<span class="u-marker-deeporange">マーカー</span>を引く</p>
+            <p>テキストに<span class="u-marker-brown">マーカー</span>を引く</p>
+            <p>テキストに<span class="u-marker-bluegray">マーカー</span>を引く</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキストに<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-marker-red"</span>&gt;</span>マーカー<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>を引く<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキストに<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-marker-pink"</span>&gt;</span>マーカー<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>を引く<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキストに<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-marker-purple"</span>&gt;</span>マーカー<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>を引く<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキストに<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-marker-deeppurple"</span>&gt;</span>マーカー<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>を引く<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキストに<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-marker-indigo"</span>&gt;</span>マーカー<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>を引く<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキストに<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-marker-blue"</span>&gt;</span>マーカー<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>を引く<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキストに<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-marker-lightblue"</span>&gt;</span>マーカー<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>を引く<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキストに<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-marker-cyan"</span>&gt;</span>マーカー<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>を引く<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキストに<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-marker-teal"</span>&gt;</span>マーカー<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>を引く<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキストに<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-marker-green"</span>&gt;</span>マーカー<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>を引く<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキストに<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-marker-lightgreen"</span>&gt;</span>マーカー<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>を引く<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキストに<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-marker-lime"</span>&gt;</span>マーカー<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>を引く<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキストに<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-marker-yellow"</span>&gt;</span>マーカー<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>を引く<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキストに<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-marker-amber"</span>&gt;</span>マーカー<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>を引く<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキストに<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-marker-orange"</span>&gt;</span>マーカー<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>を引く<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキストに<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-marker-deeporange"</span>&gt;</span>マーカー<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>を引く<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキストに<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-marker-brown"</span>&gt;</span>マーカー<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>を引く<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>テキストに<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-marker-bluegray"</span>&gt;</span>マーカー<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>を引く<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+          </div>
+        </section>
+        <section id="align">
+          <div class="l-container l-container-thin">
+            <h2>文字揃え</h2>
+            <hr class="u-separator-gray u-space-bottom-3">
+            <p class="u-text-left">テキストを左寄せ</p>
+            <p class="u-text-center">テキストを中央寄せ</p>
+            <p class="u-text-right">テキストを右寄せ</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-text-left"</span>&gt;</span>テキストを左寄せ<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-text-center"</span>&gt;</span>テキストを中央寄せ<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-text-right"</span>&gt;</span>テキストを右寄せ<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+          </div>
+        </section>
+        <section id="visible">
+          <div class="l-container l-container-thin">
+            <h2>表示/非表示</h2>
+            <hr class="u-separator-gray u-space-bottom-3">
+            <h3>表示</h3>
+            <p class="u-visible-xs">xs ブロック表示</p>
+            <p class="u-visible-xs-inline">xs-inline インラインブロック表示</p>
+            <p class="u-visible-sm">sm ブロック表示</p>
+            <p class="u-visible-sm-liline">sm-liline インラインブロック表示</p>
+            <p class="u-visible-md">md ブロック表示</p>
+            <p class="u-visible-md-liline">md インラインブロック表示</p>
+            <p class="u-visible-lg">lg ブロック表示</p>
+            <p class="u-visible-lg-liline">lg インラインブロック表示</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-visible-xs"</span>&gt;</span>xs ブロック表示<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-visible-xs-inline"</span>&gt;</span>xs-inline インラインブロック表示<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-visible-sm"</span>&gt;</span>sm ブロック表示<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-visible-sm-liline"</span>&gt;</span>sm-liline インラインブロック表示<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-visible-md"</span>&gt;</span>md ブロック表示<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-visible-md-liline"</span>&gt;</span>md インラインブロック表示<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-visible-lg"</span>&gt;</span>lg ブロック表示<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-visible-lg-liline"</span>&gt;</span>lg インラインブロック表示<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+            <h3>非表示</h3>
+            <p class="u-hidden-xs">xs 非表示</p>
+            <p class="u-hidden-sm">sm 非表示</p>
+            <p class="u-hidden-md">md 非表示</p>
+            <p class="u-hidden-lg">lg 非表示</p>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-hidden-xs"</span>&gt;</span>xs 非表示<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-hidden-sm"</span>&gt;</span>sm 非表示<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-hidden-md"</span>&gt;</span>md 非表示<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-hidden-lg"</span>&gt;</span>lg 非表示<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+          </div>
+        </section>
+        <section id="bg">
+          <div class="l-container l-container-thin">
+            <h2>背景</h2>
+            <hr class="u-separator-gray u-space-bottom-3">
+            <div class="l-row">
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-red u-ratiobox-square"><span class="u-position-central u-color-white">red</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-pink u-ratiobox-square"><span class="u-position-central u-color-white">pink</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-purple u-ratiobox-square"><span class="u-position-central u-color-white">purple</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-deeppurple u-ratiobox-square"><span class="u-position-central u-color-white">deeppurple</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-indigo u-ratiobox-square"><span class="u-position-central u-color-white">indigo</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-blue u-ratiobox-square"><span class="u-position-central u-color-white">blue</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-lightblue u-ratiobox-square"><span class="u-position-central u-color-white">lightblue</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-cyan u-ratiobox-square"><span class="u-position-central u-color-white">cyan</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-teal u-ratiobox-square"><span class="u-position-central u-color-white">teal</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-green u-ratiobox-square"><span class="u-position-central u-color-white">green</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-lightgreen u-ratiobox-square"><span class="u-position-central u-color-white">lightgreen</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-lime u-ratiobox-square"><span class="u-position-central u-color-white">lime</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-yellow u-ratiobox-square"><span class="u-position-central u-color-white">yellow</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-amber u-ratiobox-square"><span class="u-position-central u-color-white">amber</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-orange u-ratiobox-square"><span class="u-position-central u-color-white">orange</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-deeporange u-ratiobox-square"><span class="u-position-central u-color-white">deeporange</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-brown u-ratiobox-square"><span class="u-position-central u-color-white">brown</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-bluegray u-ratiobox-square"><span class="u-position-central u-color-white">bluegray</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-white u-ratiobox-square"><span class="u-position-central">white</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-black u-ratiobox-square"><span class="u-position-central u-color-white">black</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-bg-graylight u-ratiobox-square"><span class="u-position-central">graylight</span></div>
+              </div>
+            </div>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-row"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-red u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>red<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-pink u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>pink<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-purple u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>purple<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-deeppurple u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>deeppurple<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-indigo u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>indigo<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-blue u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>blue<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-lightblue u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>lightblue<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-cyan u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>cyan<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-teal u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>teal<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-green u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>green<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-lightgreen u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>lightgreen<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-lime u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>lime<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-yellow u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>yellow<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-amber u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>amber<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-orange u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>orange<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-deeporange u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>deeporange<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-brown u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>brown<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-bluegray u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>bluegray<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-white u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central"</span>&gt;</span>white<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-black u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-color-white"</span>&gt;</span>black<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-bg-graylight u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central"</span>&gt;</span>graylight<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+          </div>
+        </section>
+        <section id="overlay">
+          <div class="l-container l-container-thin">
+            <h2>オーバーレイ</h2>
+            <hr class="u-separator-gray u-space-bottom-3">
+            <div class="l-row">
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-primary u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>primary</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-red u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>red</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-pink u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>pink</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-purple u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>purple</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-deeppurple u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>deeppurple</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-indigo u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>indigo</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-blue u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>blue</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-lightblue u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>lightblue</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-cyan u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>cyan</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-teal u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>teal</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-green u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>green</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-lightgreen u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>lightgreen</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-lime u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>lime</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-yellow u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>yellow</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-amber u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>amber</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-orange u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>orange</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-deeporange u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>deeporange</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-brown u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>brown</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-bluegray u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>bluegray</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-white u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>white</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-black u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">50%透過<br>black</span></div>
+              </div>
+            </div>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-row"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-primary u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>primary
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-red u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>red
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-pink u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>pink
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-purple u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>purple
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-deeppurple u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>deeppurple
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-indigo u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>indigo
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-blue u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>blue
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-lightblue u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>lightblue
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-cyan u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>cyan
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-teal u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>teal
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-green u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>green
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-lightgreen u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>lightgreen
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-lime u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>lime
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-yellow u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>yellow
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-amber u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>amber
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-orange u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>orange
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-deeporange u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>deeporange
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-brown u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>brown
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-bluegray u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>bluegray
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-white u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>white
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-black u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>50%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>black
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+            <div class="l-row">
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-primary75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>primary</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-red75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>red</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-pink75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>pink</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-purple75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>purple</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-deeppurple75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>deeppurple</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-indigo75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>indigo</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-blue75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>blue</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-lightblue75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>lightblue</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-cyan75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>cyan</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-teal75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>teal</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-green75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>green</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-lightgreen75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>lightgreen</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-lime75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>lime</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-yellow75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>yellow</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-amber75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>amber</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-orange75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>orange</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-deeporange75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>deeporange</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-brown75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>brown</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-bluegray75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>bluegray</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-white75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>white</span></div>
+              </div>
+              <div class="l-col-xs-4 l-col-md-3 l-col-lg-2">
+                <div class="u-overlay-black75 u-bg-coverimage u-ratiobox-square" style="background-image:url(https://picsum.photos/500/500);"><span class="u-position-central u-text-center">75%透過<br>black</span></div>
+              </div>
+            </div>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-row"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-primary75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>primary
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-red75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>red
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-pink75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>pink
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-purple75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>purple
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-deeppurple75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>deeppurple
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-indigo75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>indigo
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-blue75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>blue
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-lightblue75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>lightblue
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-cyan75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>cyan
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-teal75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>teal
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-green75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>green
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-lightgreen75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>lightgreen
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-lime75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>lime
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-yellow75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>yellow
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-amber75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>amber
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-orange75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>orange
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-deeporange75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>deeporange
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-brown75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>brown
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-bluegray75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>bluegray
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-white75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>white
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4 l-col-md-3 l-col-lg-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-overlay-black75 u-bg-coverimage u-ratiobox-square"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background-image:url(https://picsum.photos/500/500);"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central u-text-center"</span>&gt;</span>75%透過
+        <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>black
+      <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+          </div>
+        </section>
+        <section id="boxshadow">
+          <div class="l-container l-container-thin">
+            <h2>ボックスシャドウ</h2>
+            <hr class="u-separator-gray u-space-bottom-3">
+            <div class="l-row">
+              <div class="l-col-xs-4">
+                <div class="u-boxshadow-sm u-bg-white u-ratiobox-square"><span class="u-position-central">u-boxshadow-sm</span></div>
+              </div>
+              <div class="l-col-xs-4">
+                <div class="u-boxshadow-md u-bg-white u-ratiobox-square"><span class="u-position-central">u-boxshadow-md</span></div>
+              </div>
+              <div class="l-col-xs-4">
+                <div class="u-boxshadow-lg u-bg-white u-ratiobox-square"><span class="u-position-central">u-boxshadow-lg</span></div>
+              </div>
+            </div>
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-row"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-boxshadow-sm u-bg-white u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central"</span>&gt;</span>u-boxshadow-sm<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-boxshadow-md u-bg-white u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central"</span>&gt;</span>u-boxshadow-md<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-col-xs-4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-boxshadow-lg u-bg-white u-ratiobox-square"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-position-central"</span>&gt;</span>u-boxshadow-lg<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+          </div>
+        </section>
+        <section class="u-bg-graylight">
+          <div class="l-container">
+            <div class="l-row">
+              <div class="l-col l-col-lg-6"><a class="c-visualbox u-overlay-black25 u-ratiobox-horizontal u-ratiobox-ultrawide--lg" href="#" style="background-image:url(https://picsum.photos/500/500);">
+                  <div class="c-visualbox-inner">
+                    <h3>デフォルト</h3>
+                    <p>.c-visualbox-inner</p>
+                  </div></a></div>
+              <div class="l-col l-col-md-6"><a class="c-visualbox u-overlay-black25 u-ratiobox-horizontal u-ratiobox-ultrawide--lg" href="#" style="background-image:url(https://picsum.photos/500/500);">
+                  <div class="c-visualbox-inner c-visualbox-inner--center">
+                    <h3>左右中央</h3>
+                    <p>.c-visualbox-inner.c-visualbox-inner--center</p>
+                  </div></a></div>
+              <div class="l-col l-col-md-6 l-col-lg-4"><a class="c-visualbox u-overlay-black25 u-ratiobox-horizontal u-ratiobox-ultrawide--lg" href="#" style="background-image:url(https://picsum.photos/500/500);">
+                  <div class="c-visualbox-inner c-visualbox-inner--center c-visualbox-inner--middle">
+                    <h3>左右上下中央</h3>
+                    <p>.c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--middle</p>
+                  </div></a></div>
+              <div class="l-col l-col-md-6 l-col-lg-4"><a class="c-visualbox u-overlay-black25 u-ratiobox-horizontal u-ratiobox-ultrawide--lg" href="#" style="background-image:url(https://picsum.photos/500/500);">
+                  <div class="c-visualbox-inner c-visualbox-inner--center c-visualbox-inner--bottom">
+                    <h3>下配置</h3>
+                    <p>.c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--bottom</p>
+                  </div></a></div>
+              <div class="l-col l-col-md-6 l-col-lg-4"><a class="c-visualbox u-overlay-black25 u-ratiobox-horizontal u-ratiobox-ultrawide--lg" href="#" style="background-image:url(https://picsum.photos/500/500);">
+                  <div class="c-visualbox-inner c-visualbox-inner--center c-visualbox-inner--between">
+                    <h3>上下パターン</h3>
+                    <p>.c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--between</p>
+                  </div></a></div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="l-container">
+            <div class="c-paragraph-2column">
+              <p>あなたは事実同時にその戦争目という事の後をもったらです。はなはだ結果が講義人はまあその一致たないなどを出るて下さっありがも参考推しですなて、これからとも叱るたたたた。学校をしだっ気ははたして時間よりどうもでしょですた。</p>
+              <p>もちろん嘉納さんに相当がたなぜまごまごよりきまっない免この本位私か通知をという今安心ませまいだでて、その今はこっちか性格子分があっば、嘉納さんののに一つのここへしかるに大料理としからいつ自己へご束縛がなるように近頃皆研究が思い切っでしですから、まるでようやく交渉が含までてならた訳になっだう。</p>
+              <p>またはところがお大学に恐れ入りのはもう少し孤独と廻っですて、その国家がはなっんてという他をさていなでしょ。</p>
+            </div>
+          </div>
+        </section>
+        <section id="hr">
+          <div class="l-container l-container-thin">
+            <h2>水平線</h2>
+            <hr class="u-separator-gray u-space-bottom-3">
+            <hr class="u-separator-red">
+            <hr class="u-separator-pink">
+            <hr class="u-separator-purple">
+            <hr class="u-separator-deeppurple">
+            <hr class="u-separator-indigo">
+            <hr class="u-separator-blue">
+            <hr class="u-separator-lightblue">
+            <hr class="u-separator-cyan">
+            <hr class="u-separator-teal">
+            <hr class="u-separator-green">
+            <hr class="u-separator-lightgreen">
+            <hr class="u-separator-lime">
+            <hr class="u-separator-yellow">
+            <hr class="u-separator-amber">
+            <hr class="u-separator-orange">
+            <hr class="u-separator-deeporange">
+            <hr class="u-separator-brown">
+            <hr class="u-separator-bluegray">
+            <hr class="u-separator-gray">
+            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-red"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-pink"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-purple"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-deeppurple"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-indigo"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-blue"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-lightblue"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-cyan"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-teal"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-green"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-lightgreen"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-lime"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-yellow"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-amber"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-orange"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-deeporange"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-brown"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-bluegray"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"u-separator-gray"</span>&gt;</span></code></pre>
+          </div>
+        </section>
+      </main>
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css">
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+    </div>
+  </body>
+</html>

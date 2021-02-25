@@ -1,0 +1,8 @@
+[class*='u-maker-'] {
+  display: inline-block;
+}
+@each $index, $color in $pageColorsDilute {
+  .u-marker-#{$index} {
+    background: linear-gradient(transparent 50%, $color 50%);
+  }
+}

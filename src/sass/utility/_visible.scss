@@ -1,0 +1,35 @@
+[class^='u-visible-'] {
+  display: none;
+}
+@media screen and (max-width: $breakpoint-size-sm - 1px){
+  .u-visible-xs {
+    display: block;
+  }
+  .u-visible-xs-liline {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: $breakpoint-size-sm) and (max-width: $breakpoint-size-md - 1px){
+  .u-visible-sm {
+    display: block;
+  }
+  .u-visible-sm-liline {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: $breakpoint-size-md) and (max-width: $breakpoint-size-lg - 1px){
+  .u-visible-md {
+    display: block;
+  }
+  .u-visible-md-liline {
+    display: inline-block;
+  }
+}
+@include mq-lg {
+  .u-visible-lg {
+    display: block;
+  }
+  .u-visible-lg-liline {
+    display: inline-block;
+  }
+}

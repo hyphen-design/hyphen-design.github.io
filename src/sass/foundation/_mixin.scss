@@ -62,7 +62,7 @@
 @mixin col-style-base($size){
   $classname: selector('.l-col', $size);
   #{$classname}{
-    flex: 1;
+    // flex: 1;
     @include col-loop($grid-gutter);
 
     .row-nogutter > &{

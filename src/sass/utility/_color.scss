@@ -1,0 +1,5 @@
+@each $index, $color in $pageColors {
+  .u-color-#{$index} {
+    color: $color;
+  }
+}

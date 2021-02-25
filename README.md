@@ -7,9 +7,9 @@ FLOCSS(Foundation Layout Object CSS)の思想をベースにしたCSS設計
 - Object モジュール
   - Component 再利用できる最小単位の部品【プレフィクス .c-】
   - Project 大きな単位でのモジュール管理【プレフィクス .p-】
-- 【Utility】ユーティリティ【プレフィクス .u-】
-- 【Theme】テーマ【プレフィクス .t-】
-- 【State】状態【プレフィクス .is-】
+- Utility ユーティリティ【プレフィクス .u-】
+- Theme テーマ【プレフィクス .t-】
+- State 状態【プレフィクス .is-】
 #### Foundations
 色変数 / レイアウト変数など基本となる定義ファイル
 #### Layouts

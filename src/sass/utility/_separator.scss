@@ -1,0 +1,18 @@
+[class*='u-separator-'] {
+  margin: $spacer 0;
+  @include mq-lg {
+    margin: $spacer*2 0;
+  }
+  border: 0;
+  height: 1px;
+}
+
+@each $index, $color in $pageColors {
+  .u-separator-#{$index} {
+    background: $color;
+  }
+}
+
+.u-separator-gray {
+  background: $grey-400;
+}

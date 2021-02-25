@@ -1,0 +1,69 @@
+[class*='u-overlay-'] {
+  position: relative;
+  overflow: hidden;
+  > * {
+    z-index: 1;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+}
+
+.u-overlay-primary,
+.u-overlay-primary25,
+.u-overlay-primary75 {
+  color: $white;
+}
+
+.u-overlay-primary {
+  &:before {
+    background: rgba($primary, .5);
+  }
+}
+
+.u-overlay-primary25 {
+  &:before {
+    background: rgba($primary, .25);
+  }
+}
+
+.u-overlay-primary75 {
+  &:before {
+    background: rgba($primary, .75);
+  }
+}
+
+@each $index, $color in $pageColors {
+  .u-overlay-#{$index}25 {
+    color: $white;
+    &:before {
+      background: $color;
+      opacity: .25;
+    }
+  }
+  .u-overlay-#{$index} {
+    color: $white;
+    &:before {
+      background: $color;
+      opacity: .5;
+    }
+  }
+  .u-overlay-#{$index}75 {
+    color: $white;
+    &:before {
+      background: $color;
+      opacity: .75;
+    }
+  }
+}
+
+.u-overlay-white,
+.u-overlay-white75 {
+  color: $dark;
+}

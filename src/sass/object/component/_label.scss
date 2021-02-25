@@ -1,0 +1,23 @@
+.c-label {
+  display: inline-block;
+  color: $white;
+  line-height: 1;
+  vertical-align: middle;
+  padding: $spacer/4 $spacer/2;
+  font-size: $font-size-sm;
+  &--small {
+    font-size: $font-size-xs;
+  }
+  &--radius {
+    border-radius: $border-radius;
+  }
+  &--rounded {
+    border-radius: 50px;
+  }
+}
+
+@each $index, $color in $pageColors {
+  .c-label--#{$index} {
+    background: $color;
+  }
+}

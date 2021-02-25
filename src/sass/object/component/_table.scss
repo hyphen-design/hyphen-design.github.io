@@ -1,0 +1,53 @@
+[class^='c-table-'] {
+  width: 100%;
+  th,td {
+    padding: $spacer;
+  }
+}
+
+.c-table-basic {
+  th,td {
+    border-top: 1px solid $grey-500;
+    border-left: 1px solid $grey-500;
+    border-right: 1px solid $grey-500;
+  }
+  th {
+    background: $grey-200;
+  }
+  td {
+    background: $white;
+  }
+  tr:last-child {
+    border-bottom: 1px solid $grey-500;
+  }
+}
+
+.c-table-default,
+.c-table-striped {
+  thead {
+    border-bottom: 2px solid $grey-500;
+  }
+  tr {
+    border-bottom: 1px solid $grey-400;
+  }
+}
+
+.c-table-striped {
+  tbody {
+    tr:nth-child(odd){
+      background: $white;
+    }
+    tr:nth-child(even){
+      background: $grey-200;
+    }
+  }
+}
+
+.c-table-variable {
+  @include mq-mobile {
+    td,th {
+      width: 100%;
+      display: block;
+    }
+  }
+}

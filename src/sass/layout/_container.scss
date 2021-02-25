@@ -2,11 +2,9 @@
   width: 100%;
   max-width: $max-screen-width;
   margin: 0 auto;
-  @include mq-mobile {
-    padding: $grid-gutter*2 $grid-gutter $grid-gutter;
-  }
+  padding: $grid-gutter*1.5 $grid-gutter $grid-gutter*1.5;
   @include mq-lg {
-    padding: $grid-gutter*3 $grid-gutter*2 $grid-gutter*2;
+    padding: $grid-gutter*2 $grid-gutter $grid-gutter*2;
   }
   &:after {
     content: '';
@@ -17,13 +15,4 @@
 
 .l-container--narrow {
   max-width: $breakpoint-size-md;
-}
-
-.l-container--thin {
-  @include mq-mobile {
-    padding: $grid-gutter $grid-gutter $grid-gutter/1.5;
-  }
-  @include mq-lg {
-    padding: $grid-gutter*1.5 $grid-gutter*2 $grid-gutter;
-  }
 }

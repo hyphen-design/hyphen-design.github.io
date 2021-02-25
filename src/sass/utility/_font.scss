@@ -1,0 +1,26 @@
+.u-font-size-xxlarge {
+  font-size: $font-size-xxl;
+}
+.u-font-size-xlarge {
+  font-size: $font-size-xl;
+}
+.u-font-size-large {
+  font-size: $font-size-lg;
+}
+.u-font-size-medium {
+  font-size: $font-size-md;
+}
+.u-font-size-small {
+  font-size: $font-size-sm;
+}
+.u-font-size-tiny {
+  font-size: $font-size-base * .6;
+}
+
+// font-weight
+.u-font-weight-normal {
+  font-weight: normal;
+}
+.u-font-weight-bold {
+  font-weight: $font-weight-bold;
+}

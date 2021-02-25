@@ -1,0 +1,69 @@
+[class*='u-ratiobox-'] {
+  position: relative;
+  overflow: hidden;
+  &:after {
+    content: '';
+    display: block;
+  }
+}
+
+.u-ratiobox-square {
+  &:after {
+    padding-top: 100%;
+  }
+}
+@include mq-lg {
+  .u-ratiobox-square--lg {
+    &:after {
+      padding-top: 100%;
+    }
+  }
+}
+.u-ratiobox-horizontal { // 3:2
+  &:after {
+    padding-top: 66.666%;
+  }
+}
+@include mq-lg {
+  .u-ratiobox-horizontal--lg {
+    &:after {
+      padding-top: 66.666%;
+    }
+  }
+}
+.u-ratiobox-landscape { // 16:9
+  &:after {
+    padding-top: 56.25%;
+  }
+}
+@include mq-lg {
+  .u-ratiobox-landscape--lg {
+    &:after {
+      padding-top: 56.25%;
+    }
+  }
+}
+.u-ratiobox-ultrawide { // 21:9
+  &:after {
+    padding-top: 42.857%;
+  }
+}
+@include mq-lg {
+  .u-ratiobox-ultrawide--lg {
+    &:after {
+      padding-top: 42.857%;
+    }
+  }
+}
+.u-ratiobox-portrait { // 縦長 9:16
+  &:after {
+    padding-top: 177.777%;
+  }
+}
+@include mq-lg {
+  .u-ratiobox-portrait--lg {
+    &:after {
+      padding-top: 177.777%;
+    }
+  }
+}

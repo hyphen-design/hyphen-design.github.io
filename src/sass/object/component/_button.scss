@@ -1,0 +1,59 @@
+.c-button {
+  background: $grey-300;
+  display: inline-block;
+  margin-bottom: $spacer/2;
+  padding: $spacer $spacer*2;
+  &:hover {
+    text-decoration: none;
+  }
+  &--large {
+    font-size: $font-size-lg;
+  }
+  &--rounded {
+    border-radius: $border-radius;
+  }
+  &--pills {
+    border-radius: 100px;
+  }
+  &--outline {
+    outline: 2px solid $dark;
+    outline-offset: -2px;
+    @each $index, $color in $pageColors {
+      &.c-button--#{$index} {
+        outline-color: $color;
+        background: $white;
+        color: $color;
+        &:hover {
+          background: $color;
+          color: $white;
+        }
+      }
+      &.c-button--white {
+        color: $dark;
+      }
+    }
+  }
+  &--block {
+    display: block;
+    width: 100%;
+  }
+}
+
+@each $index, $color in $pageColors {
+  .c-button--#{$index} {
+    background: $color;
+    color: $white;
+    position: relative;
+    &:hover {
+      color: $white;
+      opacity: .8;
+    }
+  }
+}
+
+.c-button--white {
+  color: $dark;
+  &:hover {
+    color: $dark;
+  }
+}

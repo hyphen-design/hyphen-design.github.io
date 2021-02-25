@@ -31,11 +31,11 @@
             <label class="p-header-menu-close" id="nav-close" for="nav-input"></label>
             <nav class="p-header-menu-navigation" role="navigation">
               <ul class="u-list-reset">
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">MENU</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Component</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Utility</a></li>
+                <li><a href="#">Template</a></li>
               </ul>
               <ul class="u-list-reset">
                 <li><a href="#">sub</a></li>
@@ -45,142 +45,124 @@
           </div>
         </div>
       </header>
-      <nav class="c-horizontal-navigation">
-        <ul class="u-list-reset">
-          <li><a href="#">menu01</a></li>
-          <li><a href="#">menu02</a></li>
-          <li><a href="#">menu03</a></li>
-          <li><a href="#">menu04</a></li>
-          <li><a href="#">menu05</a></li>
-          <li><a href="#">menu06    </a></li>
-        </ul>
-      </nav>
       <main role="main">
+        <section>
+          <div class="p-herobanner u-overlay-black25">
+            <div class="p-herobanner-picture">
+              <picture>
+                <source media="(min-width:1200px)" srcset="https://picsum.photos/id/1015/1600/600">
+                <source media="(min-width:768px)" srcset="https://picsum.photos/id/1015/1200/600"><img src="https://picsum.photos/id/1015/800/800" alt="hero image">
+              </picture>
+            </div>
+            <div class="p-herobanner-contents p-herobanner-contents--middle p-herobanner-contents--center">
+              <div class="p-herobanner-contents-text">
+                <p class="u-font-size-large u-font-weight-bold u-color-white">とてもいい感じのタイトル</p>
+                <p class="u-color-white">わかりやすく、それでいて心に刺さる。<br>人を動かすような補足テキスト。</p>
+                <p>
+                  <button class="c-button c-button--white c-button--pills">次の行動を促すボタン</button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="u-bg-graylight">
           <div class="l-container">
-            <div class="l-row">
-              <div class="l-col-6">
-                <h1>Hello,World!</h1>
-                <h2>h2text</h2>
-                <h3>h3text</h3>
-                <h4>h4text</h4>
-              </div>
-              <div class="l-col-6">
-                <h1>Hello,World!</h1>
-                <h2>h2text</h2>
-                <h3>h3text</h3>
-                <h4>h4text</h4>
-              </div>
+            <div class="c-aleart c-aleart--info">
+              <p> <span class="u-font-weight-bold">【アラート表示】</span>いくつかのアラートコンポーネントを用意しています。</p>
             </div>
           </div>
         </section>
         <section>
           <div class="l-container">
-            <h2>Button</h2>
-            <h3>ボタンのサイズ</h3>
-            <p>
-              <button class="c-button">標準</button>
-              <button class="c-button c-button--large">サイズ大</button>
-            </p>
-            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button"</span>&gt;</span>標準<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--large"</span>&gt;</span>サイズ大<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
-            <h3>ボタンの形</h3>
-            <p>
-              <button class="c-button c-button--rounded">角丸ボタン</button>
-              <button class="c-button c-button--pills">丸ボタン</button>
-              <button class="c-button c-button--outline">アウトライン</button>
-            </p>
-            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--rounded"</span>&gt;</span>角丸ボタン<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--pills"</span>&gt;</span>丸ボタン<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline"</span>&gt;</span>アウトライン<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
-            <h3>ボタンの色</h3>
-            <p>
-              <button class="c-button c-button--red">red</button>
-              <button class="c-button c-button--pink">pink</button>
-              <button class="c-button c-button--purple">purple</button>
-              <button class="c-button c-button--deeppurple">deeppurple</button>
-              <button class="c-button c-button--indigo">indigo</button>
-              <button class="c-button c-button--blue">blue</button>
-              <button class="c-button c-button--lightblue">lightblue</button>
-              <button class="c-button c-button--cyan">cyan</button>
-              <button class="c-button c-button--teal">teal</button>
-              <button class="c-button c-button--green">green</button>
-              <button class="c-button c-button--lightgreen">lightgreen</button>
-              <button class="c-button c-button--lime">lime</button>
-              <button class="c-button c-button--yellow">yellow</button>
-              <button class="c-button c-button--amber">amber</button>
-              <button class="c-button c-button--orange">orange</button>
-              <button class="c-button c-button--deeporange">deeporange</button>
-              <button class="c-button c-button--brown">brown</button>
-              <button class="c-button c-button--bluegray">bluegray</button>
-            </p>
-            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--red"</span>&gt;</span>red<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--pink"</span>&gt;</span>pink<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--purple"</span>&gt;</span>purple<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--deeppurple"</span>&gt;</span>deeppurple<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--indigo"</span>&gt;</span>indigo<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--blue"</span>&gt;</span>blue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--lightblue"</span>&gt;</span>lightblue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--cyan"</span>&gt;</span>cyan<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--teal"</span>&gt;</span>teal<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--green"</span>&gt;</span>green<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--lightgreen"</span>&gt;</span>lightgreen<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--lime"</span>&gt;</span>lime<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--yellow"</span>&gt;</span>yellow<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--amber"</span>&gt;</span>amber<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--orange"</span>&gt;</span>orange<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--deeporange"</span>&gt;</span>deeporange<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--brown"</span>&gt;</span>brown<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--bluegray"</span>&gt;</span>bluegray <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
-            <h3>ボタンの色(アウトライン)</h3>
-            <p>
-              <button class="c-button c-button--outline c-button--red">red</button>
-              <button class="c-button c-button--outline c-button--pink">pink</button>
-              <button class="c-button c-button--outline c-button--purple">purple</button>
-              <button class="c-button c-button--outline c-button--deeppurple">deeppurple</button>
-              <button class="c-button c-button--outline c-button--indigo">indigo</button>
-              <button class="c-button c-button--outline c-button--blue">blue</button>
-              <button class="c-button c-button--outline c-button--lightblue">lightblue</button>
-              <button class="c-button c-button--outline c-button--cyan">cyan</button>
-              <button class="c-button c-button--outline c-button--teal">teal</button>
-              <button class="c-button c-button--outline c-button--green">green</button>
-              <button class="c-button c-button--outline c-button--lightgreen">lightgreen</button>
-              <button class="c-button c-button--outline c-button--lime">lime</button>
-              <button class="c-button c-button--outline c-button--yellow">yellow</button>
-              <button class="c-button c-button--outline c-button--amber">amber</button>
-              <button class="c-button c-button--outline c-button--orange">orange</button>
-              <button class="c-button c-button--outline c-button--deeporange">deeporange</button>
-              <button class="c-button c-button--outline c-button--brown">brown</button>
-              <button class="c-button c-button--outline c-button--bluegray">bluegray</button>
-            </p>
-            <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--red"</span>&gt;</span>red<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--pink"</span>&gt;</span>pink<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--purple"</span>&gt;</span>purple<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--deeppurple"</span>&gt;</span>deeppurple<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--indigo"</span>&gt;</span>indigo<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--blue"</span>&gt;</span>blue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--lightblue"</span>&gt;</span>lightblue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--cyan"</span>&gt;</span>cyan<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--teal"</span>&gt;</span>teal<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--green"</span>&gt;</span>green<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--lightgreen"</span>&gt;</span>lightgreen<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--lime"</span>&gt;</span>lime<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--yellow"</span>&gt;</span>yellow<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--amber"</span>&gt;</span>amber<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--orange"</span>&gt;</span>orange<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--deeporange"</span>&gt;</span>deeporange<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--brown"</span>&gt;</span>brown<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--bluegray"</span>&gt;</span>bluegray <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
-            <h3>ボタン横幅100％</h3>
-            <p>
-              <button class="c-button c-button--blue c-button--block">block  </button>
-            </p>
+            <div class="u-text-center">
+              <h2>NEWS</h2>
+            </div>
+            <div class="l-row">
+              <article class="l-col l-col-md-4 c-article-box"><a href="#">
+                  <figure class="u-figure-radius"><img src="https://picsum.photos/id/1028/800/566" alt="sample"></figure>
+                  <div class="c-article-box-meta">
+                    <time datetime="2021-06-05">2021.00.00</time><span class="c-label c-label--small c-label--blue">お知らせ</span>
+                  </div>
+                  <h3>記事タイトルが入ります、記事タイトルが入ります。</h3></a></article>
+              <article class="l-col l-col-md-4 c-article-box"><a href="#">
+                  <figure class="u-figure-radius"><img src="https://picsum.photos/id/1032/800/566" alt="sample"></figure>
+                  <div class="c-article-box-meta">
+                    <time datetime="2021-06-05">2021.00.00</time><span class="c-label c-label--small c-label--blue">お知らせ</span>
+                  </div>
+                  <h3>記事タイトルが入ります、記事タイトルが入ります。</h3></a></article>
+              <article class="l-col l-col-md-4 c-article-box"><a href="#">
+                  <figure class="u-figure-radius"><img src="https://picsum.photos/id/1037/800/566" alt="sample"></figure>
+                  <div class="c-article-box-meta">
+                    <time datetime="2021-06-05">2021.00.00</time><span class="c-label c-label--small c-label--blue">お知らせ</span>
+                  </div>
+                  <h3>記事タイトルが入ります、記事タイトルが入ります。</h3></a></article>
+            </div>
+            <div class="p-news-list">
+              <ul>
+                <li><a href="#">
+                    <dl>
+                      <dt>
+                        <time datetime="2021-06-05">2021.00.00</time><span class="p-news-list-label u-bg-red">サステナビリティ</span>
+                      </dt>
+                      <dd>お知らせテキスト入ります。お知らせテキスト入ります。お知らせテキスト入ります。お知らせテキスト入ります。</dd>
+                    </dl></a></li>
+                <li>
+                  <dl>
+                    <dt>
+                      <time datetime="2021-06-05">2021.00.00</time><span class="p-news-list-label u-bg-blue">お知らせ</span>
+                    </dt>
+                    <dd>お知らせテキスト入ります。お知らせテキスト入ります。お知らせテキスト入ります。</dd>
+                  </dl>
+                </li>
+                <li>
+                  <dl>
+                    <dt>
+                      <time datetime="2021-06-05">2021.00.00</time><span class="p-news-list-label u-bg-green">製品情報</span>
+                    </dt>
+                    <dd>お知らせテキスト入ります。お知らせテキスト入ります。お知らせテキスト入ります。</dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+            <div class="u-text-center u-space-top-2"><a class="c-button c-button--blue c-button--pills" href="component.html">次の行動を促すボタン</a></div>
+          </div>
+        </section>
+        <section class="u-bg-graylight">
+          <div class="l-container">
+            <div class="l-row">
+              <div class="l-col l-col-lg-6"><a class="c-visualbox u-overlay-black u-ratiobox-horizontal u-ratiobox-ultrawide--lg" href="#" style="background-image:url(https://picsum.photos/id/1042/500/500);">
+                  <div class="c-visualbox-inner c-visualbox-inner--center c-visualbox-inner--middle">
+                    <h3>コンテンツタイトル</h3>
+                  </div></a></div>
+              <div class="l-col l-col-md-6"><a class="c-visualbox u-overlay-black u-ratiobox-horizontal u-ratiobox-ultrawide--lg" href="#" style="background-image:url(https://picsum.photos/id/1044/500/500);">
+                  <div class="c-visualbox-inner c-visualbox-inner--center c-visualbox-inner--middle">
+                    <h3>コンテンツタイトル</h3>
+                  </div></a></div>
+              <div class="l-col l-col-md-6 l-col-lg-4"><a class="c-visualbox u-overlay-black u-ratiobox-horizontal u-ratiobox-ultrawide--lg" href="#" style="background-image:url(https://picsum.photos/id/1051/500/500);">
+                  <div class="c-visualbox-inner c-visualbox-inner--center c-visualbox-inner--middle">
+                    <h3>コンテンツタイトル</h3>
+                  </div></a></div>
+              <div class="l-col l-col-md-6 l-col-lg-4"><a class="c-visualbox u-overlay-black u-ratiobox-horizontal u-ratiobox-ultrawide--lg" href="#" style="background-image:url(https://picsum.photos/id/1058/500/500);">
+                  <div class="c-visualbox-inner c-visualbox-inner--center c-visualbox-inner--middle">
+                    <h3>コンテンツタイトル</h3>
+                  </div></a></div>
+              <div class="l-col l-col-md-6 l-col-lg-4"><a class="c-visualbox u-overlay-black u-ratiobox-horizontal u-ratiobox-ultrawide--lg" href="#" style="background-image:url(https://picsum.photos/id/1059/500/500);">
+                  <div class="c-visualbox-inner c-visualbox-inner--center c-visualbox-inner--middle">
+                    <h3>コンテンツタイトル</h3>
+                  </div></a></div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="l-container">
+            <div class="c-paragraph-2column">
+              <p>あなたは事実同時にその戦争目という事の後をもったらです。はなはだ結果が講義人はまあその一致たないなどを出るて下さっありがも参考推しですなて、これからとも叱るたたたた。学校をしだっ気ははたして時間よりどうもでしょですた。</p>
+              <p>もちろん嘉納さんに相当がたなぜまごまごよりきまっない免この本位私か通知をという今安心ませまいだでて、その今はこっちか性格子分があっば、嘉納さんののに一つのここへしかるに大料理としからいつ自己へご束縛がなるように近頃皆研究が思い切っでしですから、まるでようやく交渉が含までてならた訳になっだう。</p>
+              <p>またはところがお大学に恐れ入りのはもう少し孤独と廻っですて、その国家がはなっんてという他をさていなでしょ。</p>
+            </div>
           </div>
         </section>
       </main>
-      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css">
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
-      <script>hljs.initHighlightingOnLoad();</script>
     </div>
   </body>
 </html>

@@ -1,0 +1,15 @@
+.c-logo {
+  display: flex;
+  align-items: center;
+}
+
+.c-logo-primary {
+  font-weight: bold;
+  font-size: $font-size-lg;
+}
+
+.c-logo-secondary {
+  margin-left: $spacer;
+  opacity: .75;
+  font-size: $font-size-xs;
+}

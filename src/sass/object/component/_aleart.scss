@@ -1,0 +1,34 @@
+.c-aleart {
+  padding: $spacer;
+  border: 1px solid $grey-500;
+  border-radius: $border-radius;
+  background: rgba($grey-500, .25);
+  > *:last-child {
+    margin-bottom: 0;
+  }
+  &--success {
+    border-color: $success;
+    color: darken($success, 25%);
+    background: rgba($success, .25);
+  }
+  &--info {
+    border-color: $info;
+    color: darken($info, 25%);
+    background: rgba($info, .25);
+  }
+  &--danger {
+    border-color: $danger;
+    color: darken($danger, 25%);
+    background: rgba($danger, .25);
+  }
+  &--warning {
+    border-color: $warning;
+    color: darken($warning, 25%);
+    background: rgba($warning, .25);
+  }
+  &--light {
+    border-color: $light;
+    color: darken($light, 25%);
+    background: rgba($light, .25);
+  }
+}

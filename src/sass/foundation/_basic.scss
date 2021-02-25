@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&display=swap');
 
 html {
   font-size: $font-size-base;
@@ -14,7 +15,7 @@ body {
   position: relative;
   background: $white;
   min-height: 100vh;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat','Noto Sans JP',sans-serif;
   font-size: $font-size-sm;
 }
 
@@ -24,273 +25,15 @@ img {
 
 h1 {
   font-size: $font-size-xxl;
+  margin-bottom: $spacer*3;
 }
 
 h2 {
   font-size: $font-size-xl;
+  margin-bottom: $spacer*2;
 }
 
 h3 {
   font-size: $font-size-lg;
-}
-
-.u-list-reset {
-  padding: 0;
-  margin: 0;
-  li {
-    list-style: none;
-  }
-}
-
-.p-header {
-  display: flex;
-  padding: $spacer $grid-gutter;
-  align-items: center;
-}
-
-.p-header-symbol {
-  a {
-    color: $dark;
-    display: inline-block;
-    text-decoration: none;
-  }
-}
-
-.c-logo {
-  display: flex;
-  align-items: center;
-}
-
-.c-logo-primary {
-  font-weight: bold;
-  font-size: $font-size-lg;
-}
-
-.c-logo-secondary {
-  margin-left: $spacer;
-  opacity: .75;
-  font-size: $font-size-xs;
-}
-
-.p-header-menu {
-  margin-left: auto;
-  @include mq-lg {
-    margin-left: $grid-gutter;
-    flex: 1 0 auto;
-  }
-}
-
-.c-button {
-  background: $grey-300;
-  display: inline-block;
-  margin-bottom: $spacer/2;
-  padding: $spacer $spacer*2;
-  &--large {
-    font-size: $font-size-lg;
-  }
-  &--rounded {
-    border-radius: $border-radius;
-  }
-  &--pills {
-    border-radius: 100px;
-  }
-  &--outline {
-    border: 2px solid $dark;
-    @each $index, $color in $pageColors {
-      &.c-button--#{$index} {
-        border-color: $color;
-        background: $white;
-        color: $color;
-        &:hover {
-          background: $color;
-          color: $white;
-        }
-      }
-    }
-  }
-  &--block {
-    display: block;
-    width: 100%;
-  }
-}
-
-@each $index, $color in $pageColors {
-  .c-button--#{$index} {
-    background: $color;
-    color: $white;
-    position: relative;
-    &:hover {
-      opacity: .8;
-    }
-  }
-}
-
-.p-header-menu-navigation {
-  ul {
-    margin: 0;
-    padding: 0;
-    @include mq-lg {
-      display: flex;
-    }
-  }
-  li {
-    list-style: none;
-    font-size: $font-size-sm;
-  }
-  a {
-    opacity: .75;
-    transition: opacity .3s;
-    display: block;
-    @include mq-lg {
-      padding: $spacer;
-    }
-    &:hover {
-      opacity: 1;
-      text-decoration: none;
-    }
-  }
-  @include mq-lg {
-    display: flex;
-    justify-content: space-between;
-    flex: 1 0 auto;
-    ul + ul {
-      margin-left: auto;
-    }
-  }
-  @include mq-mobile {
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    right: 100%;
-    width: calc(100% - 80px);
-    height: 100vh;
-    overflow-y: auto;
-    background: $white;
-    transition: all .3s;
-    li {
-      border-bottom: 1px solid $grey-200;
-    }
-    a {
-      padding: $spacer*2;
-    }
-  }
-}
-
-#nav-input:checked ~ .p-header-menu-navigation {
-  @include mq-mobile {
-    right: 80px;
-  }
-}
-
-
-.p-header-menu-checkbox {
-  display:none;
-}
-
-.p-header-menu-trigger {
-  margin-left: auto;
-  margin-bottom: 0;
-  display: inline-block;
-  width: 30px;
-  height: 40px;
-  vertical-align: middle;
-  cursor: pointer;
-  position: relative;
-  z-index: 101;
-  @include mq-lg {
-    display: none;
-  }
-  span {
-    position: absolute;
-    right: 0;
-    height: 2px;
-    width: 30px;
-    background: $dark;
-    display: block;
-    content: '';
-    transition: all .3s;
-    &:nth-child(1) {
-      top: 11px;
-    }
-    &:nth-child(2) {
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    &:nth-child(3) {
-      bottom: 11px;
-    }
-  }
-}
-
-.p-header-menu-close {
-  display: none;
-  position: fixed;
-  z-index: 99;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
-  opacity: 0;
-  transition: .3s ease-in-out;
-}
-
-.p-header-menu-checkbox:checked ~ .p-header-menu-trigger {
-  span {
-    &:nth-child(1) {
-      transform: rotate(45deg);
-      background: $white;
-      top: 19px;
-    }
-    &:nth-child(2) {
-      opacity: 0;
-    }
-    &:nth-child(3) {
-      transform: rotate(-45deg);
-      background: $white;
-      bottom: 19px;
-    }
-  }
-}
-
-.p-header-menu-checkbox:checked ~ .p-header-menu-close {
-  display: block;
-  opacity: .75;
-}
-
-.c-horizontal-navigation {
-  background: $dark;
-  color: $white;
-  overflow-x: scroll;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-  ul {
-    padding: $spacer/2 $spacer;
-    display: flex;
-    align-items: center;
-    @include  mq-lg {
-        justify-content: center;
-    }
-    width: 100%;
-    &:after {
-      content: '';
-      width: $spacer;
-      min-height: 1em;
-      display: block;
-      flex: 1 0 auto;
-      @include  mq-lg {
-        width: 0;
-        flex: 0 1 auto;
-      }
-    }
-    li {
-      margin: $spacer/2;
-    }
-  }
-  a {
-    display: block;
-    padding: $spacer/2;
-    color: $white;
-  }
+  margin-bottom: $spacer*1.5;
 }

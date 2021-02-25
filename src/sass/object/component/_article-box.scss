@@ -1,0 +1,28 @@
+.c-article-box {
+  a {
+    color: $dark;
+    text-decoration: none;
+    &:hover {
+      h3 {
+        text-decoration: underline;
+      }
+    }
+  }
+  figure {
+    margin-bottom: $spacer;
+  }
+  h3 {
+    font-size: $font-size-md;
+  }
+}
+
+.c-article-box-meta {
+  display: flex;
+  align-items: center;
+  font-size: $font-size-xs;
+  margin-bottom: $spacer;
+  time {
+    display: inline-block;
+    margin-right: .5rem;
+  }
+}

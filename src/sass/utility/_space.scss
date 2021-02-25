@@ -1,0 +1,35 @@
+@for $i from 0 to 8 {
+  .u-space-#{$i} {
+    margin: 1rem * $i;
+  }
+}
+
+@for $i from 0 to 8 {
+  .u-space-top-#{$i} {
+    margin-top: 1rem * $i;
+  }
+}
+
+@for $i from 0 to 8 {
+  .u-space-bottom-#{$i} {
+    margin-bottom: 1rem * $i;
+  }
+}
+
+@for $i from 0 to 8 {
+  .u-padding-#{$i} {
+    padding: 1rem * $i;
+  }
+}
+
+@for $i from 0 to 8 {
+  .u-padding-top-#{$i} {
+    padding-top: 1rem * $i;
+  }
+}
+
+@for $i from 0 to 8 {
+  .u-padding-bottom-#{$i} {
+    padding-bottom: 1rem * $i;
+  }
+}

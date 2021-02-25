@@ -1,0 +1,23 @@
+[class^='u-hidden-'] {
+  display: block;
+}
+@media screen and (max-width: $breakpoint-size-sm - 1px){
+  .u-hidden-xs {
+    display: none;
+  }
+}
+@media screen and (min-width: $breakpoint-size-sm) and (max-width: $breakpoint-size-md - 1px){
+  .u-hidden-sm {
+    display: none;
+  }
+}
+@media screen and (min-width: $breakpoint-size-md) and (max-width: $breakpoint-size-lg - 1px){
+  .u-hidden-md {
+    display: none;
+  }
+}
+@include mq-lg {
+  .u-hidden-lg {
+    display: none;
+  }
+}

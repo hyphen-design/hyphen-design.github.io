@@ -1,0 +1,35 @@
+.u-position-parent {
+  position: relative;
+}
+
+.u-position-left-top,
+.u-position-right-top,
+.u-position-central {
+  position: absolute;
+}
+
+.u-position-left-top {
+  top: 0;
+  left: 0;
+}
+
+.u-position-right-top {
+  top: 0;
+  right: 0;
+}
+
+.u-position-left-bottom {
+  bottom: 0;
+  left: 0;
+}
+
+.u-position-right-bottom {
+  bottom: 0;
+  right: 0;
+}
+
+.u-position-central {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

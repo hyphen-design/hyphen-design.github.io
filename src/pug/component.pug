@@ -1,0 +1,983 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'seconde'
+  - var title = 'CSSフレームワーク'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  include include/_header.pug
+  main(role='main')
+    section.u-bg-graylight
+      .l-container
+        .l-row
+          .l-col-6
+            h1 Hello,World!
+            h2 h2text
+            h3 h3text
+            h4 h4text
+          .l-col-6
+            h1 Hello,World!
+            h2 h2text
+            h3 h3text
+            h4 h4text
+    section
+      .l-container
+        h2 Button
+        h3 ボタンのサイズ
+        p
+          button.c-button 標準
+          button.c-button.c-button--large サイズ大
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              button.c-button 標準
+              button.c-button.c-button--large サイズ大
+        h3 ボタンの形
+        p
+          button.c-button.c-button--rounded 角丸ボタン
+          button.c-button.c-button--pills 丸ボタン
+          button.c-button.c-button--outline アウトライン
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              button.c-button.c-button--rounded 角丸ボタン
+              button.c-button.c-button--pills 丸ボタン
+              button.c-button.c-button--outline アウトライン
+        h3 ボタンの色
+        p
+          button.c-button.c-button--red red
+          button.c-button.c-button--pink pink
+          button.c-button.c-button--purple purple
+          button.c-button.c-button--deeppurple deeppurple
+          button.c-button.c-button--indigo indigo
+          button.c-button.c-button--blue blue
+          button.c-button.c-button--lightblue lightblue
+          button.c-button.c-button--cyan cyan
+          button.c-button.c-button--teal teal
+          button.c-button.c-button--green green
+          button.c-button.c-button--lightgreen lightgreen
+          button.c-button.c-button--lime lime
+          button.c-button.c-button--yellow yellow
+          button.c-button.c-button--amber amber
+          button.c-button.c-button--orange orange
+          button.c-button.c-button--deeporange deeporange
+          button.c-button.c-button--brown brown
+          button.c-button.c-button--bluegray bluegray
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              button.c-button.c-button--red red
+              button.c-button.c-button--pink pink
+              button.c-button.c-button--purple purple
+              button.c-button.c-button--deeppurple deeppurple
+              button.c-button.c-button--indigo indigo
+              button.c-button.c-button--blue blue
+              button.c-button.c-button--lightblue lightblue
+              button.c-button.c-button--cyan cyan
+              button.c-button.c-button--teal teal
+              button.c-button.c-button--green green
+              button.c-button.c-button--lightgreen lightgreen
+              button.c-button.c-button--lime lime
+              button.c-button.c-button--yellow yellow
+              button.c-button.c-button--amber amber
+              button.c-button.c-button--orange orange
+              button.c-button.c-button--deeporange deeporange
+              button.c-button.c-button--brown brown
+              button.c-button.c-button--bluegray bluegray   
+        h3 ボタンの色(アウトライン)
+        p
+          button.c-button.c-button--outline.c-button--red red
+          button.c-button.c-button--outline.c-button--pink pink
+          button.c-button.c-button--outline.c-button--purple purple
+          button.c-button.c-button--outline.c-button--deeppurple deeppurple
+          button.c-button.c-button--outline.c-button--indigo indigo
+          button.c-button.c-button--outline.c-button--blue blue
+          button.c-button.c-button--outline.c-button--lightblue lightblue
+          button.c-button.c-button--outline.c-button--cyan cyan
+          button.c-button.c-button--outline.c-button--teal teal
+          button.c-button.c-button--outline.c-button--green green
+          button.c-button.c-button--outline.c-button--lightgreen lightgreen
+          button.c-button.c-button--outline.c-button--lime lime
+          button.c-button.c-button--outline.c-button--yellow yellow
+          button.c-button.c-button--outline.c-button--amber amber
+          button.c-button.c-button--outline.c-button--orange orange
+          button.c-button.c-button--outline.c-button--deeporange deeporange
+          button.c-button.c-button--outline.c-button--brown brown
+          button.c-button.c-button--outline.c-button--bluegray bluegray
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              button.c-button.c-button--outline.c-button--red red
+              button.c-button.c-button--outline.c-button--pink pink
+              button.c-button.c-button--outline.c-button--purple purple
+              button.c-button.c-button--outline.c-button--deeppurple deeppurple
+              button.c-button.c-button--outline.c-button--indigo indigo
+              button.c-button.c-button--outline.c-button--blue blue
+              button.c-button.c-button--outline.c-button--lightblue lightblue
+              button.c-button.c-button--outline.c-button--cyan cyan
+              button.c-button.c-button--outline.c-button--teal teal
+              button.c-button.c-button--outline.c-button--green green
+              button.c-button.c-button--outline.c-button--lightgreen lightgreen
+              button.c-button.c-button--outline.c-button--lime lime
+              button.c-button.c-button--outline.c-button--yellow yellow
+              button.c-button.c-button--outline.c-button--amber amber
+              button.c-button.c-button--outline.c-button--orange orange
+              button.c-button.c-button--outline.c-button--deeporange deeporange
+              button.c-button.c-button--outline.c-button--brown brown
+              button.c-button.c-button--outline.c-button--bluegray bluegray          
+        h3 ボタン横幅100％
+        p
+            button.c-button.c-button--blue.c-button--block block  
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              button.c-button.c-button--blue.c-button--block block
+        h3 ボタングループ
+        .c-button-group
+            button.c-button.c-button--red button
+            button.c-button.c-button--blue button
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              .c-button-group
+                  button.c-button.c-button--red button
+                  button.c-button.c-button--blue button
+    section#color
+      .l-container.l-container-thin
+        h2 文字色
+        hr.u-separator-gray.u-space-bottom-3
+        p.u-color-red テキストの色を替える
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-color-red テキストの色を替える
+        p.u-color-pink テキストの色を替える
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-color-pink テキストの色を替える
+        p.u-color-purple テキストの色を替える
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-color-purple テキストの色を替える
+        p.u-color-deeppurple テキストの色を替える
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-color-deeppurple テキストの色を替える
+        p.u-color-indigo テキストの色を替える
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-color-indigo テキストの色を替える
+        p.u-color-blue テキストの色を替える
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-color-blue テキストの色を替える
+        p.u-color-lightblue テキストの色を替える
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-color-lightblue テキストの色を替える
+        p.u-color-cyan テキストの色を替える
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-color-cyan テキストの色を替える
+        p.u-color-teal テキストの色を替える
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-color-teal テキストの色を替える
+        p.u-color-green テキストの色を替える
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-color-green テキストの色を替える
+        p.u-color-lightgreen テキストの色を替える
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-color-lightgreen テキストの色を替える
+        p.u-color-lime テキストの色を替える
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-color-lime テキストの色を替える
+        p.u-color-yellow テキストの色を替える
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-color-yellow テキストの色を替える
+        p.u-color-amber テキストの色を替える
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-color-amber テキストの色を替える
+        p.u-color-orange テキストの色を替える
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-color-orange テキストの色を替える
+        p.u-color-deeporange テキストの色を替える
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-color-deeporange テキストの色を替える
+        p.u-color-brown テキストの色を替える
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-color-brown テキストの色を替える
+        p.u-color-bluegray テキストの色を替える
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-color-bluegray テキストの色を替える
+    section#size
+      .l-container.l-container-thin
+        h2 文字サイズ
+        hr.u-separator-gray.u-space-bottom-3
+        p.u-font-size-xxlarge 文字サイズ 超特大
+        p.u-font-size-xlarge 文字サイズ 特大
+        p.u-font-size-large 文字サイズ 大
+        p.u-font-size-medium 文字サイズ 標準
+        p.u-font-size-small 文字サイズ 小
+        p.u-font-size-tiny 文字サイズ 極小
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-font-size-xxlarge 文字サイズ 超特大
+              p.u-font-size-xlarge 文字サイズ 特大
+              p.u-font-size-large 文字サイズ 大
+              p.u-font-size-medium 文字サイズ 標準
+              p.u-font-size-small 文字サイズ 小
+              p.u-font-size-tiny 文字サイズ 極小
+    section#weight
+      .l-container.l-container-thin
+        h2 文字の太さ
+        hr.u-separator-gray.u-space-bottom-3
+        p.u-font-weight-normal 文字の太さ 標準
+        p.u-font-weight-bold 文字の太さ ボールド
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-font-weight-normal 文字の太さ 標準
+              p.u-font-weight-bold 文字の太さ ボールド
+    section#highlight
+      .l-container.l-container-thin
+        h2 マーカー
+        hr.u-separator-gray.u-space-bottom-3
+        p
+          |テキストに
+          span.u-marker-red マーカー
+          |を引く
+        p
+          |テキストに
+          span.u-marker-pink マーカー
+          |を引く
+        p
+          |テキストに
+          span.u-marker-purple マーカー
+          |を引く
+        p
+          |テキストに
+          span.u-marker-deeppurple マーカー
+          |を引く
+        p
+          |テキストに
+          span.u-marker-indigo マーカー
+          |を引く
+        p
+          |テキストに
+          span.u-marker-blue マーカー
+          |を引く
+        p
+          |テキストに
+          span.u-marker-lightblue マーカー
+          |を引く
+        p
+          |テキストに
+          span.u-marker-cyan マーカー
+          |を引く
+        p
+          |テキストに
+          span.u-marker-teal マーカー
+          |を引く
+        p
+          |テキストに
+          span.u-marker-green マーカー
+          |を引く
+        p
+          |テキストに
+          span.u-marker-lightgreen マーカー
+          |を引く
+        p
+          |テキストに
+          span.u-marker-lime マーカー
+          |を引く
+        p
+          |テキストに
+          span.u-marker-yellow マーカー
+          |を引く
+        p
+          |テキストに
+          span.u-marker-amber マーカー
+          |を引く
+        p
+          |テキストに
+          span.u-marker-orange マーカー
+          |を引く
+        p
+          |テキストに
+          span.u-marker-deeporange マーカー
+          |を引く
+        p
+          |テキストに
+          span.u-marker-brown マーカー
+          |を引く
+        p
+          |テキストに
+          span.u-marker-bluegray マーカー
+          |を引く
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p
+                |テキストに
+                span.u-marker-red マーカー
+                |を引く
+              p
+                |テキストに
+                span.u-marker-pink マーカー
+                |を引く
+              p
+                |テキストに
+                span.u-marker-purple マーカー
+                |を引く
+              p
+                |テキストに
+                span.u-marker-deeppurple マーカー
+                |を引く
+              p
+                |テキストに
+                span.u-marker-indigo マーカー
+                |を引く
+              p
+                |テキストに
+                span.u-marker-blue マーカー
+                |を引く
+              p
+                |テキストに
+                span.u-marker-lightblue マーカー
+                |を引く
+              p
+                |テキストに
+                span.u-marker-cyan マーカー
+                |を引く
+              p
+                |テキストに
+                span.u-marker-teal マーカー
+                |を引く
+              p
+                |テキストに
+                span.u-marker-green マーカー
+                |を引く
+              p
+                |テキストに
+                span.u-marker-lightgreen マーカー
+                |を引く
+              p
+                |テキストに
+                span.u-marker-lime マーカー
+                |を引く
+              p
+                |テキストに
+                span.u-marker-yellow マーカー
+                |を引く
+              p
+                |テキストに
+                span.u-marker-amber マーカー
+                |を引く
+              p
+                |テキストに
+                span.u-marker-orange マーカー
+                |を引く
+              p
+                |テキストに
+                span.u-marker-deeporange マーカー
+                |を引く
+              p
+                |テキストに
+                span.u-marker-brown マーカー
+                |を引く
+              p
+                |テキストに
+                span.u-marker-bluegray マーカー
+                |を引く
+    section#align
+      .l-container.l-container-thin
+        h2 文字揃え
+        hr.u-separator-gray.u-space-bottom-3
+        p.u-text-left テキストを左寄せ
+        p.u-text-center テキストを中央寄せ
+        p.u-text-right テキストを右寄せ
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-text-left テキストを左寄せ
+              p.u-text-center テキストを中央寄せ
+              p.u-text-right テキストを右寄せ
+    section#visible
+      .l-container.l-container-thin
+        h2 表示/非表示
+        hr.u-separator-gray.u-space-bottom-3
+        h3 表示
+        p.u-visible-xs xs ブロック表示
+        p.u-visible-xs-inline xs-inline インラインブロック表示
+        p.u-visible-sm sm ブロック表示
+        p.u-visible-sm-liline sm-liline インラインブロック表示
+        p.u-visible-md md ブロック表示
+        p.u-visible-md-liline md インラインブロック表示
+        p.u-visible-lg lg ブロック表示
+        p.u-visible-lg-liline lg インラインブロック表示
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-visible-xs xs ブロック表示
+              p.u-visible-xs-inline xs-inline インラインブロック表示
+              p.u-visible-sm sm ブロック表示
+              p.u-visible-sm-liline sm-liline インラインブロック表示
+              p.u-visible-md md ブロック表示
+              p.u-visible-md-liline md インラインブロック表示
+              p.u-visible-lg lg ブロック表示
+              p.u-visible-lg-liline lg インラインブロック表示
+        h3 非表示
+        p.u-hidden-xs xs 非表示
+        p.u-hidden-sm sm 非表示
+        p.u-hidden-md md 非表示
+        p.u-hidden-lg lg 非表示
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              p.u-hidden-xs xs 非表示
+              p.u-hidden-sm sm 非表示
+              p.u-hidden-md md 非表示
+              p.u-hidden-lg lg 非表示
+    section#bg
+      .l-container.l-container-thin
+        h2 背景
+        hr.u-separator-gray.u-space-bottom-3
+        .l-row
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-red.u-ratiobox-square
+              span.u-position-central.u-color-white red
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-pink.u-ratiobox-square
+              span.u-position-central.u-color-white pink
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-purple.u-ratiobox-square
+              span.u-position-central.u-color-white purple
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-deeppurple.u-ratiobox-square
+              span.u-position-central.u-color-white deeppurple
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-indigo.u-ratiobox-square
+              span.u-position-central.u-color-white indigo
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-blue.u-ratiobox-square
+              span.u-position-central.u-color-white blue
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-lightblue.u-ratiobox-square
+              span.u-position-central.u-color-white lightblue
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-cyan.u-ratiobox-square
+              span.u-position-central.u-color-white cyan
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-teal.u-ratiobox-square
+              span.u-position-central.u-color-white teal
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-green.u-ratiobox-square
+              span.u-position-central.u-color-white green
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-lightgreen.u-ratiobox-square
+              span.u-position-central.u-color-white lightgreen
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-lime.u-ratiobox-square
+              span.u-position-central.u-color-white lime
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-yellow.u-ratiobox-square
+              span.u-position-central.u-color-white yellow
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-amber.u-ratiobox-square
+              span.u-position-central.u-color-white amber
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-orange.u-ratiobox-square
+              span.u-position-central.u-color-white orange
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-deeporange.u-ratiobox-square
+              span.u-position-central.u-color-white deeporange
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-brown.u-ratiobox-square
+              span.u-position-central.u-color-white brown
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-bluegray.u-ratiobox-square
+              span.u-position-central.u-color-white bluegray
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-white.u-ratiobox-square
+              span.u-position-central white
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-black.u-ratiobox-square
+              span.u-position-central.u-color-white black
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-bg-graylight.u-ratiobox-square
+              span.u-position-central graylight
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              .l-row
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-red.u-ratiobox-square
+                    span.u-position-central.u-color-white red
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-pink.u-ratiobox-square
+                    span.u-position-central.u-color-white pink
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-purple.u-ratiobox-square
+                    span.u-position-central.u-color-white purple
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-deeppurple.u-ratiobox-square
+                    span.u-position-central.u-color-white deeppurple
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-indigo.u-ratiobox-square
+                    span.u-position-central.u-color-white indigo
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-blue.u-ratiobox-square
+                    span.u-position-central.u-color-white blue
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-lightblue.u-ratiobox-square
+                    span.u-position-central.u-color-white lightblue
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-cyan.u-ratiobox-square
+                    span.u-position-central.u-color-white cyan
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-teal.u-ratiobox-square
+                    span.u-position-central.u-color-white teal
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-green.u-ratiobox-square
+                    span.u-position-central.u-color-white green
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-lightgreen.u-ratiobox-square
+                    span.u-position-central.u-color-white lightgreen
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-lime.u-ratiobox-square
+                    span.u-position-central.u-color-white lime
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-yellow.u-ratiobox-square
+                    span.u-position-central.u-color-white yellow
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-amber.u-ratiobox-square
+                    span.u-position-central.u-color-white amber
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-orange.u-ratiobox-square
+                    span.u-position-central.u-color-white orange
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-deeporange.u-ratiobox-square
+                    span.u-position-central.u-color-white deeporange
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-brown.u-ratiobox-square
+                    span.u-position-central.u-color-white brown
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-bluegray.u-ratiobox-square
+                    span.u-position-central.u-color-white bluegray
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-white.u-ratiobox-square
+                    span.u-position-central white
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-black.u-ratiobox-square
+                    span.u-position-central.u-color-white black
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-bg-graylight.u-ratiobox-square
+                    span.u-position-central graylight
+    section#overlay
+      .l-container.l-container-thin
+        h2 オーバーレイ
+        hr.u-separator-gray.u-space-bottom-3
+        .l-row
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-primary.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>primary
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-red.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>red
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-pink.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>pink
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-purple.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>purple
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-deeppurple.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>deeppurple
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-indigo.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>indigo
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-blue.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>blue
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-lightblue.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>lightblue
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-cyan.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>cyan
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-teal.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>teal
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-green.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>green
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-lightgreen.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>lightgreen
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-lime.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>lime
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-yellow.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>yellow
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-amber.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>amber
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-orange.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>orange
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-deeporange.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>deeporange
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-brown.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>brown
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-bluegray.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>bluegray
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-white.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>white
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-black.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 50%透過<br>black
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              .l-row
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-primary.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>primary
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-red.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>red
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-pink.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>pink
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-purple.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>purple
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-deeppurple.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>deeppurple
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-indigo.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>indigo
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-blue.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>blue
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-lightblue.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>lightblue
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-cyan.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>cyan
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-teal.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>teal
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-green.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>green
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-lightgreen.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>lightgreen
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-lime.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>lime
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-yellow.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>yellow
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-amber.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>amber
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-orange.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>orange
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-deeporange.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>deeporange
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-brown.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>brown
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-bluegray.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>bluegray
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-white.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>white
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-black.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 50%透過<br>black
+
+        .l-row
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-primary75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>primary
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-red75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>red
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-pink75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>pink
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-purple75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>purple
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-deeppurple75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>deeppurple
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-indigo75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>indigo
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-blue75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>blue
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-lightblue75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>lightblue
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-cyan75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>cyan
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-teal75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>teal
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-green75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>green
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-lightgreen75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>lightgreen
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-lime75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>lime
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-yellow75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>yellow
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-amber75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>amber
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-orange75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>orange
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-deeporange75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>deeporange
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-brown75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>brown
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-bluegray75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>bluegray
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-white75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>white
+          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            .u-overlay-black75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 75%透過<br>black
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              .l-row
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-primary75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>primary
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-red75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>red
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-pink75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>pink
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-purple75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>purple
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-deeppurple75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>deeppurple
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-indigo75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>indigo
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-blue75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>blue
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-lightblue75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>lightblue
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-cyan75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>cyan
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-teal75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>teal
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-green75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>green
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-lightgreen75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>lightgreen
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-lime75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>lime
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-yellow75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>yellow
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-amber75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>amber
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-orange75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>orange
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-deeporange75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>deeporange
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-brown75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>brown
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-bluegray75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>bluegray
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-white75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>white
+                .l-col-xs-4.l-col-md-3.l-col-lg-2
+                  .u-overlay-black75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 75%透過<br>black
+
+    section#boxshadow
+      .l-container.l-container-thin
+        h2 ボックスシャドウ
+        hr.u-separator-gray.u-space-bottom-3
+        .l-row
+          .l-col-xs-4
+            .u-boxshadow-sm.u-bg-white.u-ratiobox-square
+              span.u-position-central u-boxshadow-sm
+          .l-col-xs-4
+            .u-boxshadow-md.u-bg-white.u-ratiobox-square
+              span.u-position-central u-boxshadow-md
+          .l-col-xs-4
+            .u-boxshadow-lg.u-bg-white.u-ratiobox-square
+              span.u-position-central u-boxshadow-lg
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              .l-row
+                .l-col-xs-4
+                  .u-boxshadow-sm.u-bg-white.u-ratiobox-square
+                    span.u-position-central u-boxshadow-sm
+                .l-col-xs-4
+                  .u-boxshadow-md.u-bg-white.u-ratiobox-square
+                    span.u-position-central u-boxshadow-md
+                .l-col-xs-4
+                  .u-boxshadow-lg.u-bg-white.u-ratiobox-square
+                    span.u-position-central u-boxshadow-lg
+    section.u-bg-graylight
+      .l-container
+        .l-row
+          .l-col.l-col-lg-6
+            a.c-visualbox.u-overlay-black25.u-ratiobox-horizontal.u-ratiobox-ultrawide--lg(href='#',style='background-image:url(https://picsum.photos/500/500);')
+              .c-visualbox-inner
+                h3 デフォルト
+                p .c-visualbox-inner
+          .l-col.l-col-md-6
+            a.c-visualbox.u-overlay-black25.u-ratiobox-horizontal.u-ratiobox-ultrawide--lg(href='#',style='background-image:url(https://picsum.photos/500/500);')
+              .c-visualbox-inner.c-visualbox-inner--center
+                h3 左右中央
+                p .c-visualbox-inner.c-visualbox-inner--center
+          .l-col.l-col-md-6.l-col-lg-4
+            a.c-visualbox.u-overlay-black25.u-ratiobox-horizontal.u-ratiobox-ultrawide--lg(href='#',style='background-image:url(https://picsum.photos/500/500);')
+              .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--middle
+                h3 左右上下中央
+                p .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--middle
+          .l-col.l-col-md-6.l-col-lg-4
+            a.c-visualbox.u-overlay-black25.u-ratiobox-horizontal.u-ratiobox-ultrawide--lg(href='#',style='background-image:url(https://picsum.photos/500/500);')
+              .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--bottom
+                h3 下配置
+                p .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--bottom
+          .l-col.l-col-md-6.l-col-lg-4
+            a.c-visualbox.u-overlay-black25.u-ratiobox-horizontal.u-ratiobox-ultrawide--lg(href='#',style='background-image:url(https://picsum.photos/500/500);')
+              .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--between
+                h3 上下パターン
+                p .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--between
+    section
+      .l-container
+        .c-paragraph-2column
+          p あなたは事実同時にその戦争目という事の後をもったらです。はなはだ結果が講義人はまあその一致たないなどを出るて下さっありがも参考推しですなて、これからとも叱るたたたた。学校をしだっ気ははたして時間よりどうもでしょですた。
+          p もちろん嘉納さんに相当がたなぜまごまごよりきまっない免この本位私か通知をという今安心ませまいだでて、その今はこっちか性格子分があっば、嘉納さんののに一つのここへしかるに大料理としからいつ自己へご束縛がなるように近頃皆研究が思い切っでしですから、まるでようやく交渉が含までてならた訳になっだう。
+          p またはところがお大学に恐れ入りのはもう少し孤独と廻っですて、その国家がはなっんてという他をさていなでしょ。
+    section#hr
+      .l-container.l-container-thin
+        h2 水平線
+        hr.u-separator-gray.u-space-bottom-3
+        hr.u-separator-red
+        hr.u-separator-pink
+        hr.u-separator-purple
+        hr.u-separator-deeppurple
+        hr.u-separator-indigo
+        hr.u-separator-blue
+        hr.u-separator-lightblue
+        hr.u-separator-cyan
+        hr.u-separator-teal
+        hr.u-separator-green
+        hr.u-separator-lightgreen
+        hr.u-separator-lime
+        hr.u-separator-yellow
+        hr.u-separator-amber
+        hr.u-separator-orange
+        hr.u-separator-deeporange
+        hr.u-separator-brown
+        hr.u-separator-bluegray
+        hr.u-separator-gray
+        pre
+          code
+            :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+              hr.u-separator-red
+              hr.u-separator-pink
+              hr.u-separator-purple
+              hr.u-separator-deeppurple
+              hr.u-separator-indigo
+              hr.u-separator-blue
+              hr.u-separator-lightblue
+              hr.u-separator-cyan
+              hr.u-separator-teal
+              hr.u-separator-green
+              hr.u-separator-lightgreen
+              hr.u-separator-lime
+              hr.u-separator-yellow
+              hr.u-separator-amber
+              hr.u-separator-orange
+              hr.u-separator-deeporange
+              hr.u-separator-brown
+              hr.u-separator-bluegray
+              hr.u-separator-gray
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();

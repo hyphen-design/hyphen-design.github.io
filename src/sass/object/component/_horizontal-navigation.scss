@@ -1,0 +1,36 @@
+.c-horizontal-navigation {
+  background: $dark;
+  color: $white;
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  ul {
+    padding: $spacer/2 $spacer;
+    display: flex;
+    align-items: center;
+    @include  mq-lg {
+        justify-content: center;
+    }
+    width: 100%;
+    &:after {
+      content: '';
+      width: $spacer;
+      min-height: 1em;
+      display: block;
+      flex: 1 0 auto;
+      @include  mq-lg {
+        width: 0;
+        flex: 0 1 auto;
+      }
+    }
+    li {
+      margin: $spacer/2;
+    }
+  }
+  a {
+    display: block;
+    padding: $spacer/2;
+    color: $white;
+  }
+}

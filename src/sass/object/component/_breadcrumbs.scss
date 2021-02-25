@@ -1,0 +1,22 @@
+.c-breadcrumbs {
+  font-size: $font-size-sm;
+  ol,
+  ul {
+    margin: 1rem 0;
+    padding-left: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: $spacer;
+  }
+  li {
+    display: inline-block;
+    &+ li {
+      margin-left: $spacer/2;
+      &:before {
+        content: '/';
+        margin-right: $spacer/2;
+        opacity: .5;
+      }
+    }
+  }
+}
