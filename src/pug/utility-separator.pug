@@ -1,0 +1,65 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'seconde'
+  - var title = '水平線'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section.u-bg-deeporange
+          .c-pagetitle
+            h1 Separator
+        section#hr
+          .l-container.l-container-thin
+            h2 水平線
+            hr.u-separator-red
+            hr.u-separator-pink
+            hr.u-separator-purple
+            hr.u-separator-deeppurple
+            hr.u-separator-indigo
+            hr.u-separator-blue
+            hr.u-separator-lightblue
+            hr.u-separator-cyan
+            hr.u-separator-teal
+            hr.u-separator-green
+            hr.u-separator-lightgreen
+            hr.u-separator-lime
+            hr.u-separator-yellow
+            hr.u-separator-amber
+            hr.u-separator-orange
+            hr.u-separator-deeporange
+            hr.u-separator-brown
+            hr.u-separator-bluegray
+            hr.u-separator-gray
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  hr.u-separator-red
+                  hr.u-separator-pink
+                  hr.u-separator-purple
+                  hr.u-separator-deeppurple
+                  hr.u-separator-indigo
+                  hr.u-separator-blue
+                  hr.u-separator-lightblue
+                  hr.u-separator-cyan
+                  hr.u-separator-teal
+                  hr.u-separator-green
+                  hr.u-separator-lightgreen
+                  hr.u-separator-lime
+                  hr.u-separator-yellow
+                  hr.u-separator-amber
+                  hr.u-separator-orange
+                  hr.u-separator-deeporange
+                  hr.u-separator-brown
+                  hr.u-separator-bluegray
+                  hr.u-separator-gray
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();

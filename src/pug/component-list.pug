@@ -1,0 +1,106 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'seconde'
+  - var title = 'リストコンポーネント'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section.u-bg-teal
+          .c-pagetitle
+            h1 List
+        section
+          .l-container
+            h2 リスト表示
+            h3 デフォルト
+            ul
+              li Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              li Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              li Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  ul
+                    li Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    li Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    li Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            h3 デフォルト番号つき
+            ol
+              li Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              li Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              li Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  ol
+                    li Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    li Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    li Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            h3 番号なしリスト（整形）
+            ul.c-list.c-list--basic
+              li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              li
+                | list
+                ul.c-list.c-list--basic
+                  li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  ul.c-list.c-list--basic
+                    li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    li
+                      | list
+                      ul.c-list.c-list--basic
+                        li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            h3 番号つきリスト（整形）
+            ol.c-list.c-list--number
+              li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  ol.c-list.c-list--number
+                    li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            h3 番号つき注釈リスト（整形）
+            ol.c-list.c-list--annotation
+              li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  ol.c-list.c-list--annotation
+                    li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            h3 注釈リスト（整形）
+            ul.c-list.c-list--asterisk
+              li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  ul.c-list.c-list--asterisk
+                    li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    li Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();

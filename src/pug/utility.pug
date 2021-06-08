@@ -1,0 +1,24 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'seconde'
+  - var title = 'Utility'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section
+          .c-visualbox.u-overlay-dotmesh.u-ratiobox-horizontal.u-ratiobox-landscape--lg(style='background-image:url(https://picsum.photos/id/678/500/500);')
+            .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--middle
+              h1 Utility
+          .l-container
+
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();

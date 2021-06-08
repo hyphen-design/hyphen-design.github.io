@@ -1,0 +1,306 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var theme = 'dashboard'
+  - var page = 'seconde'
+  - var title = 'ボタンコンポーネント'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section.u-bg-teal
+          .c-pagetitle
+            h1 Button
+        section
+          .l-container
+            h2 ボタンのサイズ
+            p
+              button.c-button.c-button--small サイズ小
+              button.c-button 標準
+              button.c-button.c-button--large サイズ大
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  button.c-button.c-button--small サイズ小
+                  button.c-button 標準
+                  button.c-button.c-button--large サイズ大
+            h3 ボタンの形/種類
+            p
+              button.c-button.c-button--rounded 角丸ボタン
+              button.c-button.c-button--pills 丸ボタン
+              button.c-button.c-button--outline アウトライン
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  button.c-button.c-button--rounded 角丸ボタン
+                  button.c-button.c-button--pills 丸ボタン
+                  button.c-button.c-button--outline アウトライン
+            h3 ボタンの色
+            p
+              button.c-button.c-button--red red
+              button.c-button.c-button--pink pink
+              button.c-button.c-button--purple purple
+              button.c-button.c-button--deeppurple deeppurple
+              button.c-button.c-button--indigo indigo
+              button.c-button.c-button--blue blue
+              button.c-button.c-button--lightblue lightblue
+              button.c-button.c-button--cyan cyan
+              button.c-button.c-button--teal teal
+              button.c-button.c-button--green green
+              button.c-button.c-button--lightgreen lightgreen
+              button.c-button.c-button--lime lime
+              button.c-button.c-button--yellow yellow
+              button.c-button.c-button--amber amber
+              button.c-button.c-button--orange orange
+              button.c-button.c-button--deeporange deeporange
+              button.c-button.c-button--brown brown
+              button.c-button.c-button--bluegray bluegray
+              button.c-button.c-button--black black
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  button.c-button.c-button--red red
+                  button.c-button.c-button--pink pink
+                  button.c-button.c-button--purple purple
+                  button.c-button.c-button--deeppurple deeppurple
+                  button.c-button.c-button--indigo indigo
+                  button.c-button.c-button--blue blue
+                  button.c-button.c-button--lightblue lightblue
+                  button.c-button.c-button--cyan cyan
+                  button.c-button.c-button--teal teal
+                  button.c-button.c-button--green green
+                  button.c-button.c-button--lightgreen lightgreen
+                  button.c-button.c-button--lime lime
+                  button.c-button.c-button--yellow yellow
+                  button.c-button.c-button--amber amber
+                  button.c-button.c-button--orange orange
+                  button.c-button.c-button--deeporange deeporange
+                  button.c-button.c-button--brown brown
+                  button.c-button.c-button--bluegray bluegray
+                  button.c-button.c-button--black black
+            h3 ボタンの影
+            p.u-font-size-small ※アウトラインタイプやグラデーションボタンには適用なし
+            p
+              button.c-button.c-button--red.c-button--depth button
+              button.c-button.c-button--red.c-button--rounded.c-button--depth rounded button
+              button.c-button.c-button--red.c-button--pills.c-button--depth pills button
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  button.c-button.c-button--red.c-button--depth button
+                  button.c-button.c-button--red.c-button--rounded.c-button--depth rounded button
+                  button.c-button.c-button--red.c-button--pills.c-button--depth pills button
+            h3 グラデーション
+            p
+              button.c-button.c-button--gradient-warmflame.c-button--depth
+                span Warm Flame
+              button.c-button.c-button--gradient-nightfade.c-button--depth
+                span Night Fade
+              button.c-button.c-button--gradient-springwarmth.c-button--depth
+                span Spring Warmth
+              button.c-button.c-button--gradient-juicypeach.c-button--depth
+                span Juicy Peach
+              button.c-button.c-button--gradient-youngpassion.c-button--depth
+                span Young Passion
+              button.c-button.c-button--gradient-ladylips.c-button--depth
+                span Lady Lips
+              button.c-button.c-button--gradient-sunnymorning.c-button--depth
+                span Sunny Morning
+              button.c-button.c-button--gradient-rainyashville.c-button--depth
+                span Rainy Ashville
+              button.c-button.c-button--gradient-frozendreams.c-button--depth
+                span Frozen Dreams
+              button.c-button.c-button--gradient-winterneva.c-button--depth
+                span Winter Neva
+              button.c-button.c-button--gradient-dustygrass.c-button--depth
+                span Dusty Grass
+              button.c-button.c-button--gradient-temptingazure.c-button--depth
+                span Tempting Azure
+              button.c-button.c-button--gradient-heavyrain.c-button--depth
+                span Heavy Rain
+              button.c-button.c-button--gradient-amycrisp.c-button--depth
+                span Amy Crisp
+              button.c-button.c-button--gradient-meanfruit.c-button--depth
+                span Mean Fruit
+              button.c-button.c-button--gradient-deepblue.c-button--depth
+                span Deep Blue
+              button.c-button.c-button--gradient-ripemalinka.c-button--depth
+                span Ripe Malinka
+              button.c-button.c-button--gradient-cloudyknoxville.c-button--depth
+                span Cloudy
+              button.c-button.c-button--gradient-malibubeach.c-button--depth
+                span Malibu Beach
+              button.c-button.c-button--gradient-newlife.c-button--depth
+                span New Life
+              button.c-button.c-button--gradient-truesunset.c-button--depth
+                span True Sunset
+              button.c-button.c-button--gradient-morpheusden.c-button--depth
+                span Morpheus Den
+              button.c-button.c-button--gradient-rarewind.c-button--depth
+                span Rare Wind
+              button.c-button.c-button--gradient-nearmoon.c-button--depth
+                span Near Moon
+              button.c-button.c-button--gradient-wildapple.c-button--depth
+                span Wild Apple
+              button.c-button.c-button--gradient-saintpetersburg.c-button--depth
+                span Saint Petersburg
+              button.c-button.c-button--gradient-ariellessmile.c-button--depth
+                span Arielle's Smile
+              button.c-button.c-button--gradient-plumplate.c-button--depth
+                span Plum Plate
+              button.c-button.c-button--gradient-everlastingsky.c-button--depth
+                span Everlasting Sky
+              button.c-button.c-button--gradient-happyfisher.c-button--depth
+                span Happy Fisher
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  button.c-button.c-button--gradient-warmflame.c-button--depth
+                    span Warm Flame
+                  button.c-button.c-button--gradient-nightfade.c-button--depth
+                    span Night Fade
+                  button.c-button.c-button--gradient-springwarmth.c-button--depth
+                    span Spring Warmth
+                  button.c-button.c-button--gradient-juicypeach.c-button--depth
+                    span Juicy Peach
+                  button.c-button.c-button--gradient-youngpassion.c-button--depth
+                    span Young Passion
+                  button.c-button.c-button--gradient-ladylips.c-button--depth
+                    span Lady Lips
+                  button.c-button.c-button--gradient-sunnymorning.c-button--depth
+                    span Sunny Morning
+                  button.c-button.c-button--gradient-rainyashville.c-button--depth
+                    span Rainy Ashville
+                  button.c-button.c-button--gradient-frozendreams.c-button--depth
+                    span Frozen Dreams
+                  button.c-button.c-button--gradient-winterneva.c-button--depth
+                    span Winter Neva
+                  button.c-button.c-button--gradient-dustygrass.c-button--depth
+                    span Dusty Grass
+                  button.c-button.c-button--gradient-temptingazure.c-button--depth
+                    span Tempting Azure
+                  button.c-button.c-button--gradient-heavyrain.c-button--depth
+                    span Heavy Rain
+                  button.c-button.c-button--gradient-amycrisp.c-button--depth
+                    span Amy Crisp
+                  button.c-button.c-button--gradient-meanfruit.c-button--depth
+                    span Mean Fruit
+                  button.c-button.c-button--gradient-deepblue.c-button--depth
+                    span Deep Blue
+                  button.c-button.c-button--gradient-ripemalinka.c-button--depth
+                    span Ripe Malinka
+                  button.c-button.c-button--gradient-cloudyknoxville.c-button--depth
+                    span Cloudy
+                  button.c-button.c-button--gradient-malibubeach.c-button--depth
+                    span Malibu Beach
+                  button.c-button.c-button--gradient-newlife.c-button--depth
+                    span New Life
+                  button.c-button.c-button--gradient-truesunset.c-button--depth
+                    span True Sunset
+                  button.c-button.c-button--gradient-morpheusden.c-button--depth
+                    span Morpheus Den
+                  button.c-button.c-button--gradient-rarewind.c-button--depth
+                    span Rare Wind
+                  button.c-button.c-button--gradient-nearmoon.c-button--depth
+                    span Near Moon
+                  button.c-button.c-button--gradient-wildapple.c-button--depth
+                    span Wild Apple
+                  button.c-button.c-button--gradient-saintpetersburg.c-button--depth
+                    span Saint Petersburg
+                  button.c-button.c-button--gradient-ariellessmile.c-button--depth
+                    span Arielle's Smile
+                  button.c-button.c-button--gradient-plumplate.c-button--depth
+                    span Plum Plate
+                  button.c-button.c-button--gradient-everlastingsky.c-button--depth
+                    span Everlasting Sky
+                  button.c-button.c-button--gradient-happyfisher.c-button--depth
+                    span Happy Fisher
+            h3 ボタンの色(アウトライン)
+            p
+              button.c-button.c-button--outline.c-button--red red
+              button.c-button.c-button--outline.c-button--pink pink
+              button.c-button.c-button--outline.c-button--purple purple
+              button.c-button.c-button--outline.c-button--deeppurple deeppurple
+              button.c-button.c-button--outline.c-button--indigo indigo
+              button.c-button.c-button--outline.c-button--blue blue
+              button.c-button.c-button--outline.c-button--lightblue lightblue
+              button.c-button.c-button--outline.c-button--cyan cyan
+              button.c-button.c-button--outline.c-button--teal teal
+              button.c-button.c-button--outline.c-button--green green
+              button.c-button.c-button--outline.c-button--lightgreen lightgreen
+              button.c-button.c-button--outline.c-button--lime lime
+              button.c-button.c-button--outline.c-button--yellow yellow
+              button.c-button.c-button--outline.c-button--amber amber
+              button.c-button.c-button--outline.c-button--orange orange
+              button.c-button.c-button--outline.c-button--deeporange deeporange
+              button.c-button.c-button--outline.c-button--brown brown
+              button.c-button.c-button--outline.c-button--bluegray bluegray
+              button.c-button.c-button--outline.c-button--black black
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  button.c-button.c-button--outline.c-button--red red
+                  button.c-button.c-button--outline.c-button--pink pink
+                  button.c-button.c-button--outline.c-button--purple purple
+                  button.c-button.c-button--outline.c-button--deeppurple deeppurple
+                  button.c-button.c-button--outline.c-button--indigo indigo
+                  button.c-button.c-button--outline.c-button--blue blue
+                  button.c-button.c-button--outline.c-button--lightblue lightblue
+                  button.c-button.c-button--outline.c-button--cyan cyan
+                  button.c-button.c-button--outline.c-button--teal teal
+                  button.c-button.c-button--outline.c-button--green green
+                  button.c-button.c-button--outline.c-button--lightgreen lightgreen
+                  button.c-button.c-button--outline.c-button--lime lime
+                  button.c-button.c-button--outline.c-button--yellow yellow
+                  button.c-button.c-button--outline.c-button--amber amber
+                  button.c-button.c-button--outline.c-button--orange orange
+                  button.c-button.c-button--outline.c-button--deeporange deeporange
+                  button.c-button.c-button--outline.c-button--brown brown
+                  button.c-button.c-button--outline.c-button--bluegray bluegray          
+            h3 ボタン横幅100％
+            p
+                button.c-button.c-button--blue.c-button--block block  
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  button.c-button.c-button--blue.c-button--block block
+            h3 ボタンアイコン
+            p
+                button.c-button.c-button--blue.c-button--outline.c-button--arrowright button
+                button.c-button.c-button--blue.c-button--outline.c-button--arrowleft button
+                button.c-button.c-button--blue.c-button--outline.c-button--email button
+                button.c-button.c-button--blue.c-button--outline.c-button--send button
+                button.c-button.c-button--blue.c-button--outline.c-button--download button
+                button.c-button.c-button--blue.c-button--outline.c-button--targetblank button
+                button.c-button.c-button--blue.c-button--outline.c-button--cart button
+                button.c-button.c-button--blue.c-button--outline.c-button--phone button
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  button.c-button.c-button--blue.c-button--outline.c-button--arrowright button
+                  button.c-button.c-button--blue.c-button--outline.c-button--arrowleft button
+                  button.c-button.c-button--blue.c-button--outline.c-button--email button
+                  button.c-button.c-button--blue.c-button--outline.c-button--send button
+                  button.c-button.c-button--blue.c-button--outline.c-button--download button
+                  button.c-button.c-button--blue.c-button--outline.c-button--targetblank button
+                  button.c-button.c-button--blue.c-button--outline.c-button--cart button
+                  button.c-button.c-button--blue.c-button--outline.c-button--phone button
+            h3 ボタングループ
+            .c-button-group
+                button.c-button.c-button--red.c-button--depth button
+                button.c-button.c-button--blue.c-button--depth button
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .c-button-group
+                      button.c-button.c-button--red.c-button--depth button
+                      button.c-button.c-button--blue.c-button--depth button
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();

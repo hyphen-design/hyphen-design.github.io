@@ -1,0 +1,14 @@
+.is-sticky {
+  z-index: 10;
+  &.l-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+}
+
+.is-no-mobile {
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}

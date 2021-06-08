@@ -1,0 +1,130 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'seconde'
+  - var title = 'ナビゲーション'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section.u-bg-teal
+          .c-pagetitle
+            h1 Navigation
+        section
+          .l-container
+            h2 ナビゲーション
+            h3 ページネーション
+            .c-pagenation
+              nav
+                a(href='#').c-pagenation-first
+                  span.material-icons chevron_left
+                  span.material-icons chevron_left
+                a(href='#')
+                  span.material-icons chevron_left
+                a(href='#') 4
+                span.is-current 5
+                a(href='#') 6
+                a(href='#')
+                  span.material-icons chevron_right
+                a(href='#').c-pagenation-last
+                  span.material-icons chevron_right
+                  span.material-icons chevron_right
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .c-pagenation
+                    nav
+                      a(href='#').c-pagenation-first
+                        span.material-icons chevron_left
+                        span.material-icons chevron_left
+                      a(href='#')
+                        span.material-icons chevron_left
+                      a(href='#') 4
+                      span.is-current 5
+                      a(href='#') 6
+                      a(href='#')
+                        span.material-icons chevron_right
+                      a(href='#').c-pagenation-last
+                        span.material-icons chevron_right
+                        span.material-icons chevron_right
+            h3 記事前後ナビゲーション
+            .c-article-navigation
+              nav
+                a(href='#').is-disabled 前の記事
+                a(href='#') 一覧へ戻る
+                a(href='#') 次の記事
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .c-article-navigation
+                    nav
+                      a(href='#').is-disabled 前の記事
+                      a(href='#') 一覧へ戻る
+                      a(href='#') 次の記事
+            h3 罫線付きナビゲーション(デフォルト4つ)
+            .c-separation-navigation
+              nav
+                a(href='#')
+                  img(src="media/image/sample-icons/medicak-records.svg" alt='sampleicon' width='40')
+                  span.c-separation-navigation-text Navigation Text
+                a(href='#')
+                  img(src="media/image/sample-icons/desktop-pc.svg" alt='sampleicon' width='40')
+                  span.c-separation-navigation-text Navigation Text
+                a(href='#')
+                  img(src="media/image/sample-icons/map.svg" alt='sampleicon' width='40')
+                  span.c-separation-navigation-text Navigation Text
+                a(href='#')
+                  img(src="media/image/sample-icons/cpu.svg" alt='sampleicon' width='40')
+                  span.c-separation-navigation-text Navigation Text
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .c-separation-navigation
+                    nav
+                      a(href='#')
+                        img(src="media/image/sample-icons/medicak-records.svg" alt='sampleicon' width='40')
+                        span.c-separation-navigation-text Navigation Text
+                      a(href='#')
+                        img(src="media/image/sample-icons/desktop-pc.svg" alt='sampleicon' width='40')
+                        span.c-separation-navigation-text Navigation Text
+                      a(href='#')
+                        img(src="media/image/sample-icons/map.svg" alt='sampleicon' width='40')
+                        span.c-separation-navigation-text Navigation Text
+                      a(href='#')
+                        img(src="media/image/sample-icons/cpu.svg" alt='sampleicon' width='40')
+                        span.c-separation-navigation-text Navigation Text
+            h3 フローナビゲーション
+            .c-flow-navigation
+              ul
+                li.is-current
+                  span.c-flow-navigation-number 1
+                  | 入力
+                li
+                  span.c-flow-navigation-number 2
+                  | 確認
+                li
+                  span.c-flow-navigation-number 3
+                  | 完了
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .c-flow-navigation
+                    ul
+                      li.is-current
+                        span.c-flow-navigation-number 1
+                        | 入力
+                      li
+                        span.c-flow-navigation-number 2
+                        | 確認
+                      li
+                        span.c-flow-navigation-number 3
+                        | 完了
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();

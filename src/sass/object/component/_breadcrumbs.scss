@@ -1,12 +1,11 @@
 .c-breadcrumbs {
-  font-size: $font-size-sm;
+  font-size: $font-size-xs;
   ol,
   ul {
     margin: 1rem 0;
     padding-left: 0;
     white-space: nowrap;
     overflow-x: auto;
-    padding: $spacer;
   }
   li {
     display: inline-block;

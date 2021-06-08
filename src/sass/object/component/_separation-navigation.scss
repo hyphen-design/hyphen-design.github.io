@@ -1,0 +1,61 @@
+.c-separation-navigation {
+  a {
+    display: block;
+    text-align: center;
+    padding: $spacer*2 $spacer;
+    color: $primary;
+    & + a {
+      border-top: 1px solid $grey-300;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $link-color;
+    }
+  }
+  img {
+    display: block;
+    margin: $spacer auto;
+  }
+  @include mq-sm {
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      > * {
+        width: 50%;
+      }
+      a {
+        &:nth-child(2) {
+          border-top: 0;
+        }
+        &:nth-child(even) {
+          border-left: 1px solid $grey-300;
+        }
+      }
+    }
+  }
+  @include mq-lg {
+    nav {
+      > * {
+        width: 25%;
+      }
+      a {
+        border-top: 0;
+        &:nth-child(3) {
+          border-left: 1px solid $grey-300;
+        }
+      }
+    }
+  }
+}
+
+.c-separation-navigation-text {
+  display: block;
+  margin: $spacer auto;
+  &:after {
+    vertical-align: middle;
+    margin-left: $spacer/2;
+    content: '\e5cc';
+    font-family: 'Material Icons';
+  }
+}

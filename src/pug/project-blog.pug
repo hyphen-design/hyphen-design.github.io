@@ -1,0 +1,60 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'seconde'
+  - var title = 'ブログ構成UI'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section.u-bg-blue
+          .c-pagetitle
+            h1 Blog
+        section
+          .l-container
+            h2 ブログパーツ
+            h3 メタ情報
+            .p-article-meta
+              .p-article-meta-date
+                time(itemprop='dateModified' datetime='2021-04-11') 2021.04.11
+                |（公開日：
+                time(itemprop='datePublished' datetime='2021-04-01') 2021.04.01
+                |）
+              .p-article-meta-category Category Name
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .p-article-summary
+                    .p-article-summary-date
+                      time(itemprop='dateModified' datetime='2021-04-11') 2021.04.11
+                      |（公開日：
+                      time(itemprop='datePublished' datetime='2021-04-01') 2021.04.01
+                      |）
+                    .p-article-summary-category Category Name
+            h3 タイトル+キャッチ画像
+            .p-article-header
+              h1 ブログタイトルが入りますブログタイトルが入ります
+              figure
+                img(src='https://picsum.photos/id/147/1200/600' alt='sample')
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .p-article-header
+                    h1 ブログタイトルが入りますブログタイトルが入ります
+                    figure
+                      img(src='https://picsum.photos/id/147/1200/600' alt='sample')
+            h3 著者情報
+            .p-article-author(itemprop='author',itemscope,itemtype='https://schema.org/Person')
+              span(itemprp='name') Author Name
+              span(itemprp='email') info@xxxx.xxxx
+              link(itemprop='url' href='https://www.dummy.com/user/Authorname') 
+              
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();

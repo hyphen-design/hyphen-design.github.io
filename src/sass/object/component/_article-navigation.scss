@@ -1,0 +1,40 @@
+.c-article-navigation {
+  background: $grey-300;
+  border-radius: $border-radius-lg;
+  padding: $spacer;
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  a {
+    padding: $spacer;
+    color: $primary;
+    &:before,
+    &:after {
+      vertical-align: middle;
+      font-family: 'Material Icons';
+    }
+    &:first-child {
+      text-align: left;
+      &:before {
+        content: '\e5cb';
+        margin-right: $spacer/2;
+      }
+    }
+    &:last-child {
+      text-align: right;
+      &:after {
+        content: '\e5cc';
+        margin-left: $spacer/2;
+      }
+    }
+    &.is-disabled {
+      pointer-events: none;
+      color: $grey-400;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $link-color;
+    }
+  }
+}

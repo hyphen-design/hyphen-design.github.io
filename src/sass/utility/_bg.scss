@@ -4,6 +4,16 @@
   }
 }
 
+.u-bg-dark {
+  background: $dark;
+}
+
 .u-bg-graylight {
   background: $grey-200;
+}
+
+.u-bg-coverimage {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

@@ -17,13 +17,14 @@
     <meta property="og:image" content="common/image/og/ogp-image.jpg">
     <meta property="og:url" content="https://www.google.com/?hl=ja">
     <link rel="stylesheet" href="common/css/style.css">
+    <script src="common/js/bundle.js"></script>
   </head>
   <body class="index">
     <div class="l-wrapper">
       <header role="banner">
         <div class="p-header">
           <div class="p-header-symbol">
-            <div class="c-logo"><a class="c-logo-primary" href="#">HYPHEN</a><span class="c-logo-secondary">Design Office</span></div>
+            <div class="c-logo"><a class="c-logo-primary" href="#">MUJI</a><span class="c-logo-secondary">CSS Framework</span></div>
           </div>
           <div class="p-header-menu">
             <input class="p-header-menu-checkbox" id="nav-input" type="checkbox">
@@ -31,15 +32,15 @@
             <label class="p-header-menu-close" id="nav-close" for="nav-input"></label>
             <nav class="p-header-menu-navigation" role="navigation">
               <ul class="u-list-reset">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Component</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="#">Utility</a></li>
-                <li><a href="#">Template</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="component.html">Component</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="utility.html">Utility</a></li>
+                <li><a href="theme.html">Theme</a></li>
               </ul>
               <ul class="u-list-reset">
-                <li><a href="#">sub</a></li>
-                <li><a href="#">sub</a></li>
+                <li><a href="#"><img src="media/image/github-brands.svg" alt="github" width="20"></a></li>
+                <li><a href="#"><span class="material-icons">search</span></a></li>
               </ul>
             </nav>
           </div>
@@ -58,9 +59,7 @@
               <div class="p-herobanner-contents-text">
                 <p class="u-font-size-large u-font-weight-bold u-color-white">とてもいい感じのタイトル</p>
                 <p class="u-color-white">わかりやすく、それでいて心に刺さる。<br>人を動かすような補足テキスト。</p>
-                <p>
-                  <button class="c-button c-button--white c-button--pills">次の行動を促すボタン</button>
-                </p>
+                <p><a class="c-button c-button--white c-button--pills" href="component-button.html">次の行動を促すボタン</a></p>
               </div>
             </div>
           </div>
@@ -75,7 +74,7 @@
         <section>
           <div class="l-container">
             <div class="u-text-center">
-              <h2>NEWS</h2>
+              <h2 class="u-space-top-0">NEWS</h2>
             </div>
             <div class="l-row">
               <article class="l-col l-col-md-4 c-article-box"><a href="#">
@@ -130,35 +129,26 @@
         <section class="u-bg-graylight">
           <div class="l-container">
             <div class="l-row">
-              <div class="l-col l-col-lg-6"><a class="c-visualbox u-overlay-black u-ratiobox-horizontal u-ratiobox-ultrawide--lg" href="#" style="background-image:url(https://picsum.photos/id/1042/500/500);">
+              <div class="l-col l-col-lg-6"><a class="c-visualbox u-overlay-black u-ratiobox-horizontal u-ratiobox-landscape--lg" href="about.html" style="background-image:url(https://picsum.photos/id/1042/500/500);">
                   <div class="c-visualbox-inner c-visualbox-inner--center c-visualbox-inner--middle">
-                    <h3>コンテンツタイトル</h3>
+                    <h3>About</h3>
                   </div></a></div>
-              <div class="l-col l-col-md-6"><a class="c-visualbox u-overlay-black u-ratiobox-horizontal u-ratiobox-ultrawide--lg" href="#" style="background-image:url(https://picsum.photos/id/1044/500/500);">
+              <div class="l-col l-col-md-6"><a class="c-visualbox u-overlay-black u-ratiobox-horizontal u-ratiobox-landscape--lg" href="component.html" style="background-image:url(https://picsum.photos/id/1044/500/500);">
                   <div class="c-visualbox-inner c-visualbox-inner--center c-visualbox-inner--middle">
-                    <h3>コンテンツタイトル</h3>
+                    <h3>Component</h3>
                   </div></a></div>
-              <div class="l-col l-col-md-6 l-col-lg-4"><a class="c-visualbox u-overlay-black u-ratiobox-horizontal u-ratiobox-ultrawide--lg" href="#" style="background-image:url(https://picsum.photos/id/1051/500/500);">
+              <div class="l-col l-col-md-6 l-col-lg-4"><a class="c-visualbox u-overlay-black u-ratiobox-horizontal u-ratiobox-landscape--lg" href="project.html" style="background-image:url(https://picsum.photos/id/1051/500/500);">
                   <div class="c-visualbox-inner c-visualbox-inner--center c-visualbox-inner--middle">
-                    <h3>コンテンツタイトル</h3>
+                    <h3>Project</h3>
                   </div></a></div>
-              <div class="l-col l-col-md-6 l-col-lg-4"><a class="c-visualbox u-overlay-black u-ratiobox-horizontal u-ratiobox-ultrawide--lg" href="#" style="background-image:url(https://picsum.photos/id/1058/500/500);">
+              <div class="l-col l-col-md-6 l-col-lg-4"><a class="c-visualbox u-overlay-black u-ratiobox-horizontal u-ratiobox-landscape--lg" href="utility.html" style="background-image:url(https://picsum.photos/id/1058/500/500);">
                   <div class="c-visualbox-inner c-visualbox-inner--center c-visualbox-inner--middle">
-                    <h3>コンテンツタイトル</h3>
+                    <h3>Utility</h3>
                   </div></a></div>
-              <div class="l-col l-col-md-6 l-col-lg-4"><a class="c-visualbox u-overlay-black u-ratiobox-horizontal u-ratiobox-ultrawide--lg" href="#" style="background-image:url(https://picsum.photos/id/1059/500/500);">
+              <div class="l-col l-col-md-6 l-col-lg-4"><a class="c-visualbox u-overlay-black u-ratiobox-horizontal u-ratiobox-landscape--lg" href="theme.html" style="background-image:url(https://picsum.photos/id/1059/500/500);">
                   <div class="c-visualbox-inner c-visualbox-inner--center c-visualbox-inner--middle">
-                    <h3>コンテンツタイトル</h3>
+                    <h3>Theme</h3>
                   </div></a></div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="l-container">
-            <div class="c-paragraph-2column">
-              <p>あなたは事実同時にその戦争目という事の後をもったらです。はなはだ結果が講義人はまあその一致たないなどを出るて下さっありがも参考推しですなて、これからとも叱るたたたた。学校をしだっ気ははたして時間よりどうもでしょですた。</p>
-              <p>もちろん嘉納さんに相当がたなぜまごまごよりきまっない免この本位私か通知をという今安心ませまいだでて、その今はこっちか性格子分があっば、嘉納さんののに一つのここへしかるに大料理としからいつ自己へご束縛がなるように近頃皆研究が思い切っでしですから、まるでようやく交渉が含までてならた訳になっだう。</p>
-              <p>またはところがお大学に恐れ入りのはもう少し孤独と廻っですて、その国家がはなっんてという他をさていなでしょ。</p>
             </div>
           </div>
         </section>

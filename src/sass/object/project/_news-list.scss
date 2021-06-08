@@ -22,6 +22,7 @@
     padding: $spacer*1.5 0;
     @include mq-lg {
       display: flex;
+      align-items: flex-start;
     }
   }
   dt {
@@ -51,6 +52,6 @@
   line-height: 1;
   text-align: center;
   display: inline-block;
-  padding: $spacer/4 $spacer/2;
+  padding: $spacer/4 $spacer/2 $spacer/3;
   width: 10em;
 }

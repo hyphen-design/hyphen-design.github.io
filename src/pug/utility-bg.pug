@@ -1,0 +1,427 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'seconde'
+  - var title = 'CSSフレームワーク'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section.u-bg-deeporange
+          .c-pagetitle
+            h1 Background
+        section
+          .l-container
+            h2 背景色
+            .l-row
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-red.u-ratiobox-square
+                  span.u-position-central.u-color-white red
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-pink.u-ratiobox-square
+                  span.u-position-central.u-color-white pink
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-purple.u-ratiobox-square
+                  span.u-position-central.u-color-white purple
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-deeppurple.u-ratiobox-square
+                  span.u-position-central.u-color-white deeppurple
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-indigo.u-ratiobox-square
+                  span.u-position-central.u-color-white indigo
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-blue.u-ratiobox-square
+                  span.u-position-central.u-color-white blue
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-lightblue.u-ratiobox-square
+                  span.u-position-central.u-color-white lightblue
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-cyan.u-ratiobox-square
+                  span.u-position-central.u-color-white cyan
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-teal.u-ratiobox-square
+                  span.u-position-central.u-color-white teal
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-green.u-ratiobox-square
+                  span.u-position-central.u-color-white green
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-lightgreen.u-ratiobox-square
+                  span.u-position-central.u-color-white lightgreen
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-lime.u-ratiobox-square
+                  span.u-position-central.u-color-white lime
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-yellow.u-ratiobox-square
+                  span.u-position-central.u-color-white yellow
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-amber.u-ratiobox-square
+                  span.u-position-central.u-color-white amber
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-orange.u-ratiobox-square
+                  span.u-position-central.u-color-white orange
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-deeporange.u-ratiobox-square
+                  span.u-position-central.u-color-white deeporange
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-brown.u-ratiobox-square
+                  span.u-position-central.u-color-white brown
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-bluegray.u-ratiobox-square
+                  span.u-position-central.u-color-white bluegray
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-white.u-ratiobox-square
+                  span.u-position-central white
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-black.u-ratiobox-square
+                  span.u-position-central.u-color-white black
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-bg-graylight.u-ratiobox-square
+                  span.u-position-central graylight
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .l-row
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-red.u-ratiobox-square
+                        span.u-position-central.u-color-white red
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-pink.u-ratiobox-square
+                        span.u-position-central.u-color-white pink
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-purple.u-ratiobox-square
+                        span.u-position-central.u-color-white purple
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-deeppurple.u-ratiobox-square
+                        span.u-position-central.u-color-white deeppurple
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-indigo.u-ratiobox-square
+                        span.u-position-central.u-color-white indigo
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-blue.u-ratiobox-square
+                        span.u-position-central.u-color-white blue
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-lightblue.u-ratiobox-square
+                        span.u-position-central.u-color-white lightblue
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-cyan.u-ratiobox-square
+                        span.u-position-central.u-color-white cyan
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-teal.u-ratiobox-square
+                        span.u-position-central.u-color-white teal
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-green.u-ratiobox-square
+                        span.u-position-central.u-color-white green
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-lightgreen.u-ratiobox-square
+                        span.u-position-central.u-color-white lightgreen
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-lime.u-ratiobox-square
+                        span.u-position-central.u-color-white lime
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-yellow.u-ratiobox-square
+                        span.u-position-central.u-color-white yellow
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-amber.u-ratiobox-square
+                        span.u-position-central.u-color-white amber
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-orange.u-ratiobox-square
+                        span.u-position-central.u-color-white orange
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-deeporange.u-ratiobox-square
+                        span.u-position-central.u-color-white deeporange
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-brown.u-ratiobox-square
+                        span.u-position-central.u-color-white brown
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-bluegray.u-ratiobox-square
+                        span.u-position-central.u-color-white bluegray
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-white.u-ratiobox-square
+                        span.u-position-central white
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-black.u-ratiobox-square
+                        span.u-position-central.u-color-white black
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-bg-graylight.u-ratiobox-square
+                        span.u-position-central graylight
+            h2 オーバーレイ
+            .l-row
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-primary.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>primary
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-red.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>red
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-pink.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>pink
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-purple.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>purple
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-deeppurple.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>deeppurple
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-indigo.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>indigo
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-blue.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>blue
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-lightblue.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>lightblue
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-cyan.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>cyan
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-teal.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>teal
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-green.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>green
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-lightgreen.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>lightgreen
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-lime.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>lime
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-yellow.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>yellow
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-amber.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>amber
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-orange.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>orange
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-deeporange.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>deeporange
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-brown.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>brown
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-bluegray.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>bluegray
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-white.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>white
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-black.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 50%透過<br>black
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .l-row
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-primary.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>primary
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-red.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>red
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-pink.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>pink
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-purple.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>purple
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-deeppurple.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>deeppurple
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-indigo.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>indigo
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-blue.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>blue
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-lightblue.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>lightblue
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-cyan.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>cyan
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-teal.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>teal
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-green.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>green
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-lightgreen.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>lightgreen
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-lime.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>lime
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-yellow.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>yellow
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-amber.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>amber
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-orange.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>orange
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-deeporange.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>deeporange
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-brown.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>brown
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-bluegray.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>bluegray
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-white.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>white
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-black.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 50%透過<br>black
+            .l-row
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-primary75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>primary
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-red75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>red
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-pink75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>pink
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-purple75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>purple
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-deeppurple75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>deeppurple
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-indigo75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>indigo
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-blue75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>blue
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-lightblue75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>lightblue
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-cyan75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>cyan
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-teal75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>teal
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-green75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>green
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-lightgreen75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>lightgreen
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-lime75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>lime
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-yellow75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>yellow
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-amber75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>amber
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-orange75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>orange
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-deeporange75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>deeporange
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-brown75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>brown
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-bluegray75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>bluegray
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-white75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>white
+              .l-col-xs-4.l-col-md-3.l-col-lg-2
+                .u-overlay-black75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                  span.u-position-central.u-text-center 75%透過<br>black
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .l-row
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-primary75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>primary
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-red75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>red
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-pink75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>pink
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-purple75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>purple
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-deeppurple75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>deeppurple
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-indigo75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>indigo
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-blue75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>blue
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-lightblue75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>lightblue
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-cyan75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>cyan
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-teal75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>teal
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-green75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>green
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-lightgreen75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>lightgreen
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-lime75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>lime
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-yellow75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>yellow
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-amber75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>amber
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-orange75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>orange
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-deeporange75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>deeporange
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-brown75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>brown
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-bluegray75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>bluegray
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-white75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>white
+                    .l-col-xs-4.l-col-md-3.l-col-lg-2
+                      .u-overlay-black75.u-bg-coverimage.u-ratiobox-square(style='background-image:url(https://picsum.photos/500/500);')
+                        span.u-position-central.u-text-center 75%透過<br>black
+                          .l-col-xs-4.l-col-md-3.l-col-lg-2
+            h3 網掛け
+            .u-overlay-dotmesh.u-bg-coverimage.u-ratiobox-horizontal(style='background-image:url(https://picsum.photos/500/500);')
+              span.u-position-central.u-text-center 網掛け画像を背景に
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .u-overlay-dotmesh.u-bg-coverimage.u-ratiobox-horizontal(style='background-image:url(https://picsum.photos/500/500);')
+                    span.u-position-central.u-text-center 網掛け画像を背景に
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();

@@ -1,0 +1,83 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'seconde'
+  - var title = 'ラベルコンポーネント'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section.u-bg-teal
+          .c-pagetitle
+            h1 Label
+        section
+          .l-container
+            h2 ラベル表示
+            h3 カラーバリエーション
+            p
+              span.c-label.c-label--red red
+              span.c-label.c-label--pink pink
+              span.c-label.c-label--purple purple
+              span.c-label.c-label--deeppurple deeppurple
+              span.c-label.c-label--indigo indigo
+              span.c-label.c-label--blue blue
+              span.c-label.c-label--lightblue lightblue
+              span.c-label.c-label--cyan cyan
+              span.c-label.c-label--teal teal
+              span.c-label.c-label--green green
+              span.c-label.c-label--lightgreen lightgreen
+              span.c-label.c-label--lime lime
+              span.c-label.c-label--yellow yellow
+              span.c-label.c-label--amber amber
+              span.c-label.c-label--orange orange
+              span.c-label.c-label--deeporange deeporange
+              span.c-label.c-label--brown brown
+              span.c-label.c-label--bluegray bluegray
+              span.c-label.c-label--graylight graylight
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  span.c-label.c-label--red red
+                  span.c-label.c-label--pink pink
+                  span.c-label.c-label--purple purple
+                  span.c-label.c-label--deeppurple deeppurple
+                  span.c-label.c-label--indigo indigo
+                  span.c-label.c-label--blue blue
+                  span.c-label.c-label--lightblue lightblue
+                  span.c-label.c-label--cyan cyan
+                  span.c-label.c-label--teal teal
+                  span.c-label.c-label--green green
+                  span.c-label.c-label--lightgreen lightgreen
+                  span.c-label.c-label--lime lime
+                  span.c-label.c-label--yellow yellow
+                  span.c-label.c-label--amber amber
+                  span.c-label.c-label--orange orange
+                  span.c-label.c-label--deeporange deeporange
+                  span.c-label.c-label--brown brown
+                  span.c-label.c-label--bluegray bluegray
+            h3 サイズ
+            p
+              span.c-label.c-label--red.c-label--small Small size
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  span.c-label.c-label--red.c-label--small red
+            h3 形
+            p
+              span.c-label.c-label--green.c-label--radius radius
+              span.c-label.c-label--green.c-label--rounded rounded
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  span.c-label.c-label--green.c-label--radius radius
+                  span.c-label.c-label--green.c-label--rounded rounded
+
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();

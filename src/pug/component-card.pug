@@ -1,0 +1,86 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'seconde'
+  - var title = 'カードコンポーネント'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section.u-bg-teal
+          .c-pagetitle
+            h1 Card
+        section
+          .l-container
+            h2 カード
+            h3 通常カード表示
+            .l-row
+              .l-col.l-col-md-6.l-col-lg-4
+                a(href='#').c-card.u-boxshadow-md.u-shape-rounded
+                  figure
+                    img(src='https://picsum.photos/id/420/600/400')
+                  h3 ddddddd
+                  p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              .l-col.l-col-md-6.l-col-lg-8
+                pre
+                  code
+                    :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                      a(href='#').c-card.u-boxshadow-md.u-shape-rounded
+                        figure
+                          img(src='https://picsum.photos/id/426/600/400')
+                        h3 ddddddd
+                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry.  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+            h3 応用パターン
+            .l-row
+              .l-col.l-col-sm-6.l-col-md-4
+                .c-card.u-boxshadow-md.u-shape-rounded
+                  figure
+                    img(src='https://picsum.photos/id/420/600/400')
+                  h3 ddddddd
+                  p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  p
+                    a(href='#').c-button.c-button--rounded.c-button--block.c-button--arrowright Button
+              .l-col.l-col-sm-6.l-col-md-8
+                pre
+                  code
+                    :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                      .c-card.u-boxshadow-md.u-shape-rounded
+                        figure
+                          img(src='https://picsum.photos/id/420/600/400')
+                        h3 ddddddd
+                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        p
+                          a(href='#').c-button.c-button--rounded.c-button--block.c-button--arrowright Button
+            .l-row.u-space-top-2
+              .l-col.l-col-sm-6.l-col-md-4
+                a(href='#').c-card.u-boxshadow-md.u-shape-rounded
+                  figure
+                    img(src='https://picsum.photos/id/420/600/400')
+                  p.u-font-size-small.u-alignitem-center
+                    time(datetime='20XX-XX-XX').u-color-grey 20XX.XX.XX
+                    |&emsp;
+                    span.c-label.c-label--bluegray お知らせ
+                  h3 ddddddd
+                  p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              .l-col.l-col-sm-6.l-col-md-8
+                pre
+                  code
+                    :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                      a(href='#').c-card.u-boxshadow-md.u-shape-rounded
+                        figure
+                          img(src='https://picsum.photos/id/420/600/400')
+                        p.u-font-size-small.u-alignitem-center
+                          time(datetime='20XX-XX-XX').u-color-grey 20XX.XX.XX
+                          |&emsp;
+                          span.c-label.c-label--bluegray お知らせ
+                        h3 ddddddd
+                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og:http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>ボタンコンポーネント | hyphen.tokyo</title>
+    <meta name="description" content="サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。">
+    <meta property="og:title" content="ボタンコンポーネント">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。">
+    <meta property="og:site_name" content="ボタンコンポーネント">
+    <meta property="og:locale" content="ja">
+    <link rel="shortcut icon" href="common/favicon.ico">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:image" content="common/image/og/ogp-image.jpg">
+    <meta property="og:url" content="https://www.google.com/?hl=ja">
+    <link rel="stylesheet" href="common/css/style.css">
+    <script src="common/js/bundle.js"></script>
+  </head>
+  <body class="seconde">
+    <div class="l-wrapper">
+      <div class="theme-dashboard">
+        <header class="l-header is-sticky" role="banner">
+          <div class="p-header theme-dark">
+            <div class="p-header-control" id="js-drawer-trigger"></div>
+            <div class="p-header-symbol">
+              <div class="c-logo"><a class="c-logo-primary" href="index.html">MUJI</a><span class="c-logo-secondary">CSS Framework</span></div>
+            </div>
+            <div class="p-header-supplement"><a class="c-button c-button--small c-button--blue c-button--download c-button--rounded" href="#">ダウンロード</a></div>
+          </div>
+        </header>
+        <div class="l-wrapper">
+          <nav class="l-navigation u-bg-graylight" role="navigation" id="js-drawer-content">
+            <div class="p-category-navigation">
+              <ul id="js-dashboard-navigation">
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/component.html">Component</a>
+                  <ul>
+                    <li><a href="/component-aleart.html">Aleart</a></li>
+                    <li><a href="/component-button.html">Button</a></li>
+                    <li><a href="/component-label.html">Label</a></li>
+                    <li><a href="/component-card.html">Card</a></li>
+                    <li><a href="/component-table.html">Table</a></li>
+                    <li><a href="/component-figure.html">Figure</a></li>
+                    <li><a href="/component-list.html">List</a></li>
+                    <li><a href="/component-navigation.html">Navigation</a></li>
+                    <li><a href="/component-visualbox.html">Visual Box</a></li>
+                    <li><a href="/component-others.html">Others</a></li>
+                  </ul>
+                </li>
+                <li><a href="/project.html">Project</a>
+                  <ul>
+                    <li><a href="/project-distance.html">Distance/History</a></li>
+                    <li><a href="/project-blog.html">Blog</a></li>
+                  </ul>
+                </li>
+                <li><a href="/utility.html">Utility</a>
+                  <ul>
+                    <li><a href="/utility-font.html">Font</a></li>
+                    <li><a href="/utility-bg.html">Background</a></li>
+                    <li><a href="/utility-gradient.html">Gradient</a></li>
+                    <li><a href="/utility-maker.html">Maker</a></li>
+                    <li><a href="/utility-boxshadow.html">Boxshadow</a></li>
+                    <li><a href="/utility-ratiobox.html">Ratiobox</a></li>
+                    <li><a href="/utility-visible.html">Visible/Hidden</a></li>
+                    <li><a href="/utility-separator.html">Separator</a></li>
+                    <li><a href="/utility-others.html">Others</a></li>
+                  </ul>
+                </li>
+                <li><a href="/theme.html">Theme</a></li>
+              </ul>
+            </div>
+          </nav>
+          <main class="l-main" role="main">
+            <section class="u-bg-teal">
+              <div class="c-pagetitle">
+                <h1>Button</h1>
+              </div>
+            </section>
+            <section>
+              <div class="l-container">
+                <h2>ボタンのサイズ</h2>
+                <p>
+                  <button class="c-button c-button--small">サイズ小</button>
+                  <button class="c-button">標準</button>
+                  <button class="c-button c-button--large">サイズ大</button>
+                </p>
+                <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--small"</span>&gt;</span>サイズ小<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button"</span>&gt;</span>標準<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--large"</span>&gt;</span>サイズ大<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+                <h3>ボタンの形/種類</h3>
+                <p>
+                  <button class="c-button c-button--rounded">角丸ボタン</button>
+                  <button class="c-button c-button--pills">丸ボタン</button>
+                  <button class="c-button c-button--outline">アウトライン</button>
+                </p>
+                <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--rounded"</span>&gt;</span>角丸ボタン<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--pills"</span>&gt;</span>丸ボタン<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline"</span>&gt;</span>アウトライン<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+                <h3>ボタンの色</h3>
+                <p>
+                  <button class="c-button c-button--red">red</button>
+                  <button class="c-button c-button--pink">pink</button>
+                  <button class="c-button c-button--purple">purple</button>
+                  <button class="c-button c-button--deeppurple">deeppurple</button>
+                  <button class="c-button c-button--indigo">indigo</button>
+                  <button class="c-button c-button--blue">blue</button>
+                  <button class="c-button c-button--lightblue">lightblue</button>
+                  <button class="c-button c-button--cyan">cyan</button>
+                  <button class="c-button c-button--teal">teal</button>
+                  <button class="c-button c-button--green">green</button>
+                  <button class="c-button c-button--lightgreen">lightgreen</button>
+                  <button class="c-button c-button--lime">lime</button>
+                  <button class="c-button c-button--yellow">yellow</button>
+                  <button class="c-button c-button--amber">amber</button>
+                  <button class="c-button c-button--orange">orange</button>
+                  <button class="c-button c-button--deeporange">deeporange</button>
+                  <button class="c-button c-button--brown">brown</button>
+                  <button class="c-button c-button--bluegray">bluegray</button>
+                  <button class="c-button c-button--black">black</button>
+                </p>
+                <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--red"</span>&gt;</span>red<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--pink"</span>&gt;</span>pink<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--purple"</span>&gt;</span>purple<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--deeppurple"</span>&gt;</span>deeppurple<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--indigo"</span>&gt;</span>indigo<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--blue"</span>&gt;</span>blue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--lightblue"</span>&gt;</span>lightblue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--cyan"</span>&gt;</span>cyan<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--teal"</span>&gt;</span>teal<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--green"</span>&gt;</span>green<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--lightgreen"</span>&gt;</span>lightgreen<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--lime"</span>&gt;</span>lime<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--yellow"</span>&gt;</span>yellow<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--amber"</span>&gt;</span>amber<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--orange"</span>&gt;</span>orange<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--deeporange"</span>&gt;</span>deeporange<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--brown"</span>&gt;</span>brown<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--bluegray"</span>&gt;</span>bluegray<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--black"</span>&gt;</span>black<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+                <h3>ボタンの影</h3>
+                <p class="u-font-size-small">※アウトラインタイプやグラデーションボタンには適用なし</p>
+                <p>
+                  <button class="c-button c-button--red c-button--depth">button</button>
+                  <button class="c-button c-button--red c-button--rounded c-button--depth">rounded button</button>
+                  <button class="c-button c-button--red c-button--pills c-button--depth">pills button</button>
+                </p>
+                <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--red c-button--depth"</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--red c-button--rounded c-button--depth"</span>&gt;</span>rounded button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--red c-button--pills c-button--depth"</span>&gt;</span>pills button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+                <h3>グラデーション</h3>
+                <p>
+                  <button class="c-button c-button--gradient-warmflame c-button--depth"><span>Warm Flame</span></button>
+                  <button class="c-button c-button--gradient-nightfade c-button--depth"><span>Night Fade</span></button>
+                  <button class="c-button c-button--gradient-springwarmth c-button--depth"><span>Spring Warmth</span></button>
+                  <button class="c-button c-button--gradient-juicypeach c-button--depth"><span>Juicy Peach</span></button>
+                  <button class="c-button c-button--gradient-youngpassion c-button--depth"><span>Young Passion</span></button>
+                  <button class="c-button c-button--gradient-ladylips c-button--depth"><span>Lady Lips</span></button>
+                  <button class="c-button c-button--gradient-sunnymorning c-button--depth"><span>Sunny Morning</span></button>
+                  <button class="c-button c-button--gradient-rainyashville c-button--depth"><span>Rainy Ashville</span></button>
+                  <button class="c-button c-button--gradient-frozendreams c-button--depth"><span>Frozen Dreams</span></button>
+                  <button class="c-button c-button--gradient-winterneva c-button--depth"><span>Winter Neva</span></button>
+                  <button class="c-button c-button--gradient-dustygrass c-button--depth"><span>Dusty Grass</span></button>
+                  <button class="c-button c-button--gradient-temptingazure c-button--depth"><span>Tempting Azure</span></button>
+                  <button class="c-button c-button--gradient-heavyrain c-button--depth"><span>Heavy Rain</span></button>
+                  <button class="c-button c-button--gradient-amycrisp c-button--depth"><span>Amy Crisp</span></button>
+                  <button class="c-button c-button--gradient-meanfruit c-button--depth"><span>Mean Fruit</span></button>
+                  <button class="c-button c-button--gradient-deepblue c-button--depth"><span>Deep Blue</span></button>
+                  <button class="c-button c-button--gradient-ripemalinka c-button--depth"><span>Ripe Malinka</span></button>
+                  <button class="c-button c-button--gradient-cloudyknoxville c-button--depth"><span>Cloudy</span></button>
+                  <button class="c-button c-button--gradient-malibubeach c-button--depth"><span>Malibu Beach</span></button>
+                  <button class="c-button c-button--gradient-newlife c-button--depth"><span>New Life</span></button>
+                  <button class="c-button c-button--gradient-truesunset c-button--depth"><span>True Sunset</span></button>
+                  <button class="c-button c-button--gradient-morpheusden c-button--depth"><span>Morpheus Den</span></button>
+                  <button class="c-button c-button--gradient-rarewind c-button--depth"><span>Rare Wind</span></button>
+                  <button class="c-button c-button--gradient-nearmoon c-button--depth"><span>Near Moon</span></button>
+                  <button class="c-button c-button--gradient-wildapple c-button--depth"><span>Wild Apple</span></button>
+                  <button class="c-button c-button--gradient-saintpetersburg c-button--depth"><span>Saint Petersburg</span></button>
+                  <button class="c-button c-button--gradient-ariellessmile c-button--depth"><span>Arielle's Smile</span></button>
+                  <button class="c-button c-button--gradient-plumplate c-button--depth"><span>Plum Plate</span></button>
+                  <button class="c-button c-button--gradient-everlastingsky c-button--depth"><span>Everlasting Sky</span></button>
+                  <button class="c-button c-button--gradient-happyfisher c-button--depth"><span>Happy Fisher</span></button>
+                </p>
+                <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-warmflame c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Warm Flame<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-nightfade c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Night Fade<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-springwarmth c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Spring Warmth<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-juicypeach c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Juicy Peach<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-youngpassion c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Young Passion<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-ladylips c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Lady Lips<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-sunnymorning c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Sunny Morning<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-rainyashville c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Rainy Ashville<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-frozendreams c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Frozen Dreams<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-winterneva c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Winter Neva<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-dustygrass c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Dusty Grass<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-temptingazure c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Tempting Azure<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-heavyrain c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Heavy Rain<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-amycrisp c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Amy Crisp<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-meanfruit c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Mean Fruit<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-deepblue c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Deep Blue<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-ripemalinka c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Ripe Malinka<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-cloudyknoxville c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Cloudy<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-malibubeach c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Malibu Beach<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-newlife c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>New Life<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-truesunset c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>True Sunset<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-morpheusden c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Morpheus Den<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-rarewind c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Rare Wind<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-nearmoon c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Near Moon<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-wildapple c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Wild Apple<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-saintpetersburg c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Saint Petersburg<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-ariellessmile c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Arielle's Smile<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-plumplate c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Plum Plate<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-everlastingsky c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Everlasting Sky<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--gradient-happyfisher c-button--depth"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Happy Fisher<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+                <h3>ボタンの色(アウトライン)</h3>
+                <p>
+                  <button class="c-button c-button--outline c-button--red">red</button>
+                  <button class="c-button c-button--outline c-button--pink">pink</button>
+                  <button class="c-button c-button--outline c-button--purple">purple</button>
+                  <button class="c-button c-button--outline c-button--deeppurple">deeppurple</button>
+                  <button class="c-button c-button--outline c-button--indigo">indigo</button>
+                  <button class="c-button c-button--outline c-button--blue">blue</button>
+                  <button class="c-button c-button--outline c-button--lightblue">lightblue</button>
+                  <button class="c-button c-button--outline c-button--cyan">cyan</button>
+                  <button class="c-button c-button--outline c-button--teal">teal</button>
+                  <button class="c-button c-button--outline c-button--green">green</button>
+                  <button class="c-button c-button--outline c-button--lightgreen">lightgreen</button>
+                  <button class="c-button c-button--outline c-button--lime">lime</button>
+                  <button class="c-button c-button--outline c-button--yellow">yellow</button>
+                  <button class="c-button c-button--outline c-button--amber">amber</button>
+                  <button class="c-button c-button--outline c-button--orange">orange</button>
+                  <button class="c-button c-button--outline c-button--deeporange">deeporange</button>
+                  <button class="c-button c-button--outline c-button--brown">brown</button>
+                  <button class="c-button c-button--outline c-button--bluegray">bluegray</button>
+                  <button class="c-button c-button--outline c-button--black">black</button>
+                </p>
+                <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--red"</span>&gt;</span>red<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--pink"</span>&gt;</span>pink<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--purple"</span>&gt;</span>purple<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--deeppurple"</span>&gt;</span>deeppurple<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--indigo"</span>&gt;</span>indigo<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--blue"</span>&gt;</span>blue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--lightblue"</span>&gt;</span>lightblue<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--cyan"</span>&gt;</span>cyan<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--teal"</span>&gt;</span>teal<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--green"</span>&gt;</span>green<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--lightgreen"</span>&gt;</span>lightgreen<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--lime"</span>&gt;</span>lime<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--yellow"</span>&gt;</span>yellow<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--amber"</span>&gt;</span>amber<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--orange"</span>&gt;</span>orange<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--deeporange"</span>&gt;</span>deeporange<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--brown"</span>&gt;</span>brown<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--outline c-button--bluegray"</span>&gt;</span>bluegray <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+                <h3>ボタン横幅100％</h3>
+                <p>
+                  <button class="c-button c-button--blue c-button--block">block  </button>
+                </p>
+                <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--blue c-button--block"</span>&gt;</span>block<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+                <h3>ボタンアイコン</h3>
+                <p>
+                  <button class="c-button c-button--blue c-button--outline c-button--arrowright">button</button>
+                  <button class="c-button c-button--blue c-button--outline c-button--arrowleft">button</button>
+                  <button class="c-button c-button--blue c-button--outline c-button--email">button</button>
+                  <button class="c-button c-button--blue c-button--outline c-button--send">button</button>
+                  <button class="c-button c-button--blue c-button--outline c-button--download">button</button>
+                  <button class="c-button c-button--blue c-button--outline c-button--targetblank">button</button>
+                  <button class="c-button c-button--blue c-button--outline c-button--cart">button</button>
+                  <button class="c-button c-button--blue c-button--outline c-button--phone">button</button>
+                </p>
+                <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--blue c-button--outline c-button--arrowright"</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--blue c-button--outline c-button--arrowleft"</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--blue c-button--outline c-button--email"</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--blue c-button--outline c-button--send"</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--blue c-button--outline c-button--download"</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--blue c-button--outline c-button--targetblank"</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--blue c-button--outline c-button--cart"</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--blue c-button--outline c-button--phone"</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
+                <h3>ボタングループ</h3>
+                <div class="c-button-group">
+                  <button class="c-button c-button--red c-button--depth">button</button>
+                  <button class="c-button c-button--blue c-button--depth">button</button>
+                </div>
+                <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button-group"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--red c-button--depth"</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"c-button c-button--blue c-button--depth"</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css">
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+    </div>
+  </body>
+</html>

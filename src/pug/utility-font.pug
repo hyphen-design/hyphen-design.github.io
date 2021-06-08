@@ -1,0 +1,87 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'seconde'
+  - var title = 'CSSフレームワーク'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section.u-bg-deeporange
+          .c-pagetitle
+            h1 Font
+        section
+          .l-container
+            h2 文字色
+            p.u-color-red テキストの色を替える
+            p.u-color-pink テキストの色を替える
+            p.u-color-purple テキストの色を替える
+            p.u-color-deeppurple テキストの色を替える
+            p.u-color-indigo テキストの色を替える
+            p.u-color-blue テキストの色を替える
+            p.u-color-lightblue テキストの色を替える
+            p.u-color-cyan テキストの色を替える
+            p.u-color-teal テキストの色を替える
+            p.u-color-green テキストの色を替える
+            p.u-color-lightgreen テキストの色を替える
+            p.u-color-lime テキストの色を替える
+            p.u-color-yellow テキストの色を替える
+            p.u-color-amber テキストの色を替える
+            p.u-color-orange テキストの色を替える
+            p.u-color-deeporange テキストの色を替える
+            p.u-color-brown テキストの色を替える
+            p.u-color-bluegray テキストの色を替える
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  p.u-color-red テキストの色を替える
+                  p.u-color-pink テキストの色を替える
+                  p.u-color-purple テキストの色を替える
+                  p.u-color-deeppurple テキストの色を替える
+                  p.u-color-indigo テキストの色を替える
+                  p.u-color-blue テキストの色を替える
+                  p.u-color-lightblue テキストの色を替える
+                  p.u-color-cyan テキストの色を替える
+                  p.u-color-teal テキストの色を替える
+                  p.u-color-green テキストの色を替える
+                  p.u-color-lightgreen テキストの色を替える
+                  p.u-color-lime テキストの色を替える
+                  p.u-color-yellow テキストの色を替える
+                  p.u-color-amber テキストの色を替える
+                  p.u-color-orange テキストの色を替える
+                  p.u-color-deeporange テキストの色を替える
+                  p.u-color-brown テキストの色を替える
+                  p.u-color-bluegray テキストの色を替える
+            h2 文字サイズ
+            p.u-font-size-xxlarge 文字サイズ 超特大
+            p.u-font-size-xlarge 文字サイズ 特大
+            p.u-font-size-large 文字サイズ 大
+            p.u-font-size-medium 文字サイズ 標準
+            p.u-font-size-small 文字サイズ 小
+            p.u-font-size-tiny 文字サイズ 極小
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  p.u-font-size-xxlarge 文字サイズ 超特大
+                  p.u-font-size-xlarge 文字サイズ 特大
+                  p.u-font-size-large 文字サイズ 大
+                  p.u-font-size-medium 文字サイズ 標準
+                  p.u-font-size-small 文字サイズ 小
+                  p.u-font-size-tiny 文字サイズ 極小
+            h2 文字の太さ
+            p.u-font-weight-normal 文字の太さ 標準
+            p.u-font-weight-bold 文字の太さ ボールド
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  p.u-font-weight-normal 文字の太さ 標準
+                  p.u-font-weight-bold 文字の太さ ボールド
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();

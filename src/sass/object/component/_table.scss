@@ -7,9 +7,9 @@
 
 .c-table-basic {
   th,td {
-    border-top: 1px solid $grey-500;
-    border-left: 1px solid $grey-500;
-    border-right: 1px solid $grey-500;
+    border-top: 1px solid $grey-400;
+    border-left: 1px solid $grey-400;
+    border-right: 1px solid $grey-400;
   }
   th {
     background: $grey-200;
@@ -18,7 +18,7 @@
     background: $white;
   }
   tr:last-child {
-    border-bottom: 1px solid $grey-500;
+    border-bottom: 1px solid $grey-400;
   }
 }
 
@@ -48,6 +48,19 @@
     td,th {
       width: 100%;
       display: block;
+    }
+  }
+}
+
+.c-table-horizontal {
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    tbody,tr,td {
+      width: 100%;
     }
   }
 }

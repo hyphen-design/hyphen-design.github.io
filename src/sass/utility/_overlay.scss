@@ -63,6 +63,17 @@
   }
 }
 
+.u-overlay-dotmesh {
+  color: $white;
+  &:before {
+    background: rgba($black, .2);
+    background-image: url('../../media/image/overlay-amikake.png');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 3px;
+  }
+}
+
 .u-overlay-white,
 .u-overlay-white75 {
   color: $dark;

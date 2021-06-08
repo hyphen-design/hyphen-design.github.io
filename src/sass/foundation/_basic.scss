@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 html {
   font-size: $font-size-base;
@@ -15,7 +16,8 @@ body {
   position: relative;
   background: $white;
   min-height: 100vh;
-  font-family: 'Montserrat','Noto Sans JP',sans-serif;
+  font-family: system-ui;
+  // font-family: 'Montserrat','Noto Sans JP',sans-serif;
   font-size: $font-size-sm;
 }
 
@@ -24,16 +26,207 @@ img {
 }
 
 h1 {
-  font-size: $font-size-xxl;
+  font-size: $font-size-xl;
   margin-bottom: $spacer*3;
 }
 
 h2 {
-  font-size: $font-size-xl;
-  margin-bottom: $spacer*2;
+  font-size: $font-size-lg;
+  margin-top: $spacer*4;
+  margin-bottom: $spacer*3;
 }
 
 h3 {
-  font-size: $font-size-lg;
-  margin-bottom: $spacer*1.5;
+  font-size: $font-size-md;
+  margin-top: $spacer*3;
+  margin-bottom: $spacer*2;
+}
+
+ul,
+dl,
+figure {
+  margin-bottom: $spacer*2;
+}
+
+
+.p-distance {
+  padding: $spacer*2 0;
+  margin-left: $spacer;
+  position: relative;
+  &:before {
+    content: '';
+    left: $spacer/2;
+    top: 0;
+    height: $spacer*2;
+    width: 1px;
+    background: $grey-300;
+    display: block;
+  }
+  dl {
+    position: relative;
+    margin-bottom: 0;
+    padding: 0 0 $spacer*4 $spacer*4;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+    }
+    &:before {
+      top: 0.45em;
+      left: -3px;
+      width: 7px;
+      height: 7px;
+      border-radius: 3.5px;
+      background: $primary;
+      z-index: 2;
+    }
+    &:after {
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 1px;
+      background: $grey-300;
+    }
+  }
+  dt {
+    color: $primary;
+    margin-bottom: $spacer*2;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: calc(0.45em + 3px);
+      left: -#{$spacer*4};
+      width: $spacer*3;
+      height: 1px;
+      background: $primary;
+    }
+  }
+  dd {
+    margin-bottom: 0;
+  }
+}
+
+.p-history {
+  dd {
+    margin-bottom: 0;
+  }
+  > dl {
+    @include mq-md {
+      display: flex;
+    }
+    > dt {
+      text-align: center;
+      background: $grey-200;
+      padding: $spacer;
+      margin-bottom: $spacer;
+      @include mq-md {
+        margin-right: $spacer;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 8em;
+        border-radius: $border-radius-lg;
+      }
+    }
+    > dd {
+      @include mq-md {
+        flex: 1 0 auto;
+        border-top: 1px solid $grey-300;
+        border-bottom: 1px solid $grey-300;
+      }
+      dl {
+        display: flex;
+        padding: $spacer*1.2 0;
+        margin-bottom: 0;
+        @include mq-md {
+          padding: $spacer*2 $spacer;
+          & + dl {
+            border-top: 1px solid $grey-300;
+          }
+        }
+        dt {
+          margin-right: $spacer;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+}
+
+.c-tag-index {
+  padding-left: 0;
+  li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 $spacer/2 $spacer/2 0;
+    a {
+      display: inline-block;
+      padding: $spacer/2 $spacer;
+      color: $dark;
+      background: rgba($dark,.1);
+    }
+  }
+}
+
+
+.c-figure {
+  figcaption {
+    margin-top: $spacer;
+    font-size: .8em;
+  }
+  &--center {
+    display:table;
+    margin-left: auto;
+    margin-right: auto;
+    figcaption {
+      display:table-caption;
+      caption-side:bottom;
+    }
+  }
+}
+
+.p-article-meta {
+  opacity: .75;
+  display: flex;
+  font-size: $font-size-xs;
+  margin-bottom: $spacer;
+}
+
+.p-article-meta-date {
+  flex-shrink: 0;
+}
+
+.p-article-meta-date + .p-article-meta-category {
+  &:before {
+    content: '|';
+    opacity: .5;
+    margin-right: $spacer/2;
+  }
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.p-article-header {
+  margin-bottom: $grid-gutter;
+  h1 {
+    line-height: 1.2;
+    font-size: 3.0rem;
+    margin-bottom: 0;
+  }
+  figure {
+    margin-bottom: $grid-gutter;
+    margin-left: -#{$grid-gutter};
+    margin-right: -#{$grid-gutter};
+    text-align: center;
+    @include mq-md {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  h1 + figure {
+    margin-top: $spacer;
+  }
 }

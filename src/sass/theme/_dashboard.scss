@@ -1,0 +1,48 @@
+.theme-dashboard {
+  height: 100%;
+  .p-header {
+    height: $dashboard-header-height;
+  }
+  .l-navigation {
+    position: fixed;
+    z-index: 9;
+    left: -100%;
+    top: $dashboard-header-height;
+    height: calc(100% - #{$dashboard-header-height});
+    width: 100%;
+    max-width: 240px;
+    &.is-switch {
+      left: 0;
+    }
+  }
+  @include mq-lg {
+    .l-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      height: calc(100% - #{$dashboard-header-height});
+    }
+    .l-header {
+      width: 100%;
+      height: $dashboard-header-height;
+    }
+    .l-navigation {
+      width: 240px;
+      height: auto;
+      min-height: calc(100% - #{$dashboard-header-height});
+      position: static;
+      &.is-switch {
+        width: 0;
+        position: fixed;
+        & + .l-main {
+          width: 100%;
+        }
+        .p-category-navigation {
+          padding: 0;
+        }
+      }
+    }
+    .l-main {
+      width: calc(100% - 240px);
+    }
+  }
+}

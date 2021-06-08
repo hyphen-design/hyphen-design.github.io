@@ -1,0 +1,7 @@
+.theme-dark {
+  background: $dark;
+  color: $white;
+  a:not(.c-button) {
+    color: $white;
+  }
+}

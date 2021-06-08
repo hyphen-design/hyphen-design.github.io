@@ -1,0 +1,40 @@
+.c-pagenation {
+  display: flex;
+  justify-content: center;
+  nav {
+    display: flex;
+  }
+  * {
+    font-size: $font-size-sm;
+    vertical-align: middle;
+  }
+  a,.is-current {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $spacer;
+    border-radius: $border-radius-lg;
+    min-width: 40px;
+    margin: $spacer/4;
+  }
+  .is-current {
+    background: $primary;
+    color: $white;
+  }
+  a {
+    border: 1px solid $primary;
+    color: $primary;
+    &:hover {
+      background: $primary;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+.c-pagenation-first,
+.c-pagenation-last {
+  .material-icons {
+    margin: -#{$spacer/2};
+  }
+}

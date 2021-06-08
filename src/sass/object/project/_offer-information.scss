@@ -1,0 +1,17 @@
+.p-offer-information {
+  display: flex;
+  align-items: center;
+  .material-icons {
+    display: block;
+    padding: $spacer/2;
+    cursor: pointer;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.p-offer-information-close {
+  flex: 1 0 auto;
+  margin-left: $grid-gutter;
+}

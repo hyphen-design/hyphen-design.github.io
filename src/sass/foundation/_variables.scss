@@ -21,8 +21,8 @@ $gray:        $grey-500 !default;
 $bluegray:    $blue-grey-500 !default;
 
 // Your Site Theme Colors
-$primary:       $teal !default;
-$secondary:     $pink !default;
+$primary:       $grey-900 !default;
+$secondary:     $teal !default;
 $tertiary:      $grey-500 !default;
 $success:       $green !default;
 $info:          $blue !default;
@@ -112,7 +112,7 @@ $body-color:      $grey-800 !default;
 $wrapper-bg:      $grey-100 !default;
 
 // Style anchor elements.
-$link-color:      theme-color("primary") !default;
+$link-color: $blue !default;
 
 // Paragraphs
 $paragraph-margin-bottom:   1.5rem !default;
@@ -202,3 +202,5 @@ $table-cell-padding-sm: ($spacer / 4) ($spacer / 3) !default;
 
 // others
 $header-height: 70px !default;
+
+$dashboard-header-height: 60px !default;

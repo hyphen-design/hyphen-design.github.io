@@ -1,0 +1,32 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'seconde'
+  - var title = 'About'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section
+          .c-visualbox.u-overlay-black.u-ratiobox-horizontal.u-ratiobox-landscape--lg(style='background-image:url(https://picsum.photos/id/785/500/500);')
+            .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--middle
+              h1 About
+          .l-container
+            h2 MUJI CSS Framework
+            p Webサイトコーディング及びWebアプリUI構築の為の必要最低限のCSSフレームワークです。コーディング初心者には、コンパイルしたCSSを。上級者には、Sassファイルを。面倒なWebサイト・UI構築の手助けになれれば幸いです。
+            h3 使い方
+            p 
+              a(href='#') Github
+              |よりダウンロードしてお使いください。
+            h3 サポート
+            p サポートは一切致しません。予めご了承ください。
+
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();

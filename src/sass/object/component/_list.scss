@@ -1,0 +1,70 @@
+.c-list {
+  margin-bottom: $spacer*1.5;
+  padding-left: 0;
+  li {
+    list-style: none;
+    position: relative;
+    padding-left: $spacer*1.2;
+    & + li {
+      margin-top: .5rem;
+    }
+    &:before {
+      content: '';
+      margin-right: $spacer/2;
+      position: absolute;
+      left: 0;
+    }
+  }
+  ul,ol {
+    padding-left: $spacer;
+    font-size: .85em;
+    margin-top: $spacer/2;
+    opacity: .75;
+  }
+  &--basic {
+    li {
+      &:before {
+        top: 0.65em;
+        width: 4px;
+        height: 4px;
+        border-radius: 2px;
+        background: $dark;
+        .u-color-white & {
+          background: $white;
+        }
+      }
+    }
+  }
+  &--number,
+  &--annotation {
+    li {
+      padding-left: $grid-gutter;
+      counter-increment: title;
+    }
+  }
+  &--number {
+    li {
+      &:before {
+        content: counter(title)'.';
+        top: 0;
+      }
+    }
+  }
+  &--annotation {
+    li {
+      &:before {
+        content: '※'counter(title);
+        font-size: 10px;
+        top: 0.25em;
+      }
+    }
+  }
+  &--asterisk {
+    li {
+      &:before {
+        content: '*';
+        top: 0.25em;
+      }
+    }
+  }
+}

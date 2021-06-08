@@ -1,0 +1,32 @@
+.c-card {
+  padding: $grid-gutter;
+  background: $white;
+  display: block;
+  color: $dark;
+  height: 100%;
+  > figure {
+    margin: -#{$grid-gutter} -#{$grid-gutter} $spacer*1.5;
+    overflow: hidden;
+    img {
+      transition: transform .3s;
+      min-width: 100%;
+    }
+  }
+  h2,h3 {
+    margin: $spacer 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+a.c-card {
+  &:hover {
+    text-decoration: none;
+    figure {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

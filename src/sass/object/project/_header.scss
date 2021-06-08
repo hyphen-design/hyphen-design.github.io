@@ -2,6 +2,9 @@
   display: flex;
   padding: $spacer $grid-gutter;
   align-items: center;
+  .c-button {
+    margin-bottom: 0;
+  }
 }
 
 .p-header-symbol {
@@ -10,15 +13,17 @@
     display: inline-block;
     text-decoration: none;
   }
+  & + .p-header-supplement {
+    margin-left: auto;
+  }
 }
-
-
 
 .p-header-menu {
   margin-left: auto;
   @include mq-lg {
     margin-left: $grid-gutter;
     flex: 1 0 auto;
+    align-items: center;
   }
 }
 
@@ -28,6 +33,7 @@
     padding: 0;
     @include mq-lg {
       display: flex;
+      align-items: center;
     }
   }
   li {
@@ -45,6 +51,9 @@
       opacity: 1;
       text-decoration: none;
     }
+  }
+  .material-icons {
+    vertical-align: middle;
   }
   @include mq-lg {
     display: flex;
@@ -152,4 +161,33 @@
 .p-header-menu-checkbox:checked ~ .p-header-menu-close {
   display: block;
   opacity: .75;
+}
+
+.p-header-supplement {
+  p,ul {
+    margin-bottom: 0;
+  }
+}
+
+.p-header-control {
+  display: flex;
+  align-items: center;
+  margin-right: $spacer;
+  font-size: $font-size-lg;
+  cursor: pointer;
+  &:before {
+    font-family: 'Material Icons';
+    content: '\e896';
+    @include mq-lg {
+      content: '\e5d4';
+    }
+  }
+  &.is-switch {
+    &:before {
+      content: '\e5cd';
+      @include mq-lg {
+        content: '\e896';
+      }
+    }
+  }
 }

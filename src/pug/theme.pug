@@ -1,0 +1,33 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'seconde'
+  - var title = 'theme'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section
+          .c-visualbox.u-overlay-dotmesh.u-ratiobox-horizontal.u-ratiobox-landscape--lg(style='background-image:url(https://picsum.photos/id/912/500/500);')
+            .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--middle
+              h1 Theme
+          .l-container
+            h2 テーマ一覧
+            ul
+              li
+                a(href='#') メディアサイトTOP
+              li
+                a(href='#') サービスサイトTOP
+              li
+                a(href='#') ブログ・記事詳細
+              li
+                a(href='#') 商品詳細
+              li
+                a(href='#') 検索結果
+              li
+                a(href='#') エントランス・サインイン

@@ -1,0 +1,172 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'seconde'
+  - var title = 'CSSフレームワーク'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section.u-bg-deeporange
+          .c-pagetitle
+            h1 Maker
+        section
+          .l-container
+            h3 文字にマーカーを引く
+            p
+              |テキストに
+              span.u-marker-red マーカー
+              |を引く
+            p
+              |テキストに
+              span.u-marker-pink マーカー
+              |を引く
+            p
+              |テキストに
+              span.u-marker-purple マーカー
+              |を引く
+            p
+              |テキストに
+              span.u-marker-deeppurple マーカー
+              |を引く
+            p
+              |テキストに
+              span.u-marker-indigo マーカー
+              |を引く
+            p
+              |テキストに
+              span.u-marker-blue マーカー
+              |を引く
+            p
+              |テキストに
+              span.u-marker-lightblue マーカー
+              |を引く
+            p
+              |テキストに
+              span.u-marker-cyan マーカー
+              |を引く
+            p
+              |テキストに
+              span.u-marker-teal マーカー
+              |を引く
+            p
+              |テキストに
+              span.u-marker-green マーカー
+              |を引く
+            p
+              |テキストに
+              span.u-marker-lightgreen マーカー
+              |を引く
+            p
+              |テキストに
+              span.u-marker-lime マーカー
+              |を引く
+            p
+              |テキストに
+              span.u-marker-yellow マーカー
+              |を引く
+            p
+              |テキストに
+              span.u-marker-amber マーカー
+              |を引く
+            p
+              |テキストに
+              span.u-marker-orange マーカー
+              |を引く
+            p
+              |テキストに
+              span.u-marker-deeporange マーカー
+              |を引く
+            p
+              |テキストに
+              span.u-marker-brown マーカー
+              |を引く
+            p
+              |テキストに
+              span.u-marker-bluegray マーカー
+              |を引く
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  p
+                    |テキストに
+                    span.u-marker-red マーカー
+                    |を引く
+                  p
+                    |テキストに
+                    span.u-marker-pink マーカー
+                    |を引く
+                  p
+                    |テキストに
+                    span.u-marker-purple マーカー
+                    |を引く
+                  p
+                    |テキストに
+                    span.u-marker-deeppurple マーカー
+                    |を引く
+                  p
+                    |テキストに
+                    span.u-marker-indigo マーカー
+                    |を引く
+                  p
+                    |テキストに
+                    span.u-marker-blue マーカー
+                    |を引く
+                  p
+                    |テキストに
+                    span.u-marker-lightblue マーカー
+                    |を引く
+                  p
+                    |テキストに
+                    span.u-marker-cyan マーカー
+                    |を引く
+                  p
+                    |テキストに
+                    span.u-marker-teal マーカー
+                    |を引く
+                  p
+                    |テキストに
+                    span.u-marker-green マーカー
+                    |を引く
+                  p
+                    |テキストに
+                    span.u-marker-lightgreen マーカー
+                    |を引く
+                  p
+                    |テキストに
+                    span.u-marker-lime マーカー
+                    |を引く
+                  p
+                    |テキストに
+                    span.u-marker-yellow マーカー
+                    |を引く
+                  p
+                    |テキストに
+                    span.u-marker-amber マーカー
+                    |を引く
+                  p
+                    |テキストに
+                    span.u-marker-orange マーカー
+                    |を引く
+                  p
+                    |テキストに
+                    span.u-marker-deeporange マーカー
+                    |を引く
+                  p
+                    |テキストに
+                    span.u-marker-brown マーカー
+                    |を引く
+                  p
+                    |テキストに
+                    span.u-marker-bluegray マーカー
+                    |を引く
+
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();

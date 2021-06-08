@@ -1,0 +1,47 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'seconde'
+  - var title = 'ボックスシャドウ'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section.u-bg-deeporange
+          .c-pagetitle
+            h1 Box shadow
+        section
+          .l-container
+            h2 ボックスシャドウ
+            .l-row
+              .l-col-xs-4
+                .u-boxshadow-sm.u-bg-white.u-ratiobox-square
+                  span.u-position-central u-boxshadow-sm
+              .l-col-xs-4
+                .u-boxshadow-md.u-bg-white.u-ratiobox-square
+                  span.u-position-central u-boxshadow-md
+              .l-col-xs-4
+                .u-boxshadow-lg.u-bg-white.u-ratiobox-square
+                  span.u-position-central u-boxshadow-lg
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .l-row
+                    .l-col-xs-4
+                      .u-boxshadow-sm.u-bg-white.u-ratiobox-square
+                        span.u-position-central u-boxshadow-sm
+                    .l-col-xs-4
+                      .u-boxshadow-md.u-bg-white.u-ratiobox-square
+                        span.u-position-central u-boxshadow-md
+                    .l-col-xs-4
+                      .u-boxshadow-lg.u-bg-white.u-ratiobox-square
+                        span.u-position-central u-boxshadow-lg
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();

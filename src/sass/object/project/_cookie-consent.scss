@@ -1,0 +1,31 @@
+.p-cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba($black, .8);
+  color: $white;
+  z-index: 100;
+  padding: $grid-gutter;
+  text-align: center;
+  @include mq-lg {
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+  p {
+    margin-bottom: 0;
+    margin-right: $spacer;
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+  button {
+    margin: $spacer*1.5 auto 0;
+    @include mq-lg {
+      margin: 0 0 0 auto;
+      flex-shrink: 0;
+    }
+  }
+}

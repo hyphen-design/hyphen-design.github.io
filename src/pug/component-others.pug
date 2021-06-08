@@ -1,0 +1,102 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'seconde'
+  - var title = 'その他コンポーネント'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section.u-bg-teal
+          .c-pagetitle
+            h1 Others
+        section
+          .l-container
+            h2 その他コンポーネント
+            h3 パンくずリスト
+            .c-breadcrumbs
+              ul(itemscope='', itemtype='https://schema.org/BreadcrumbList')
+                li(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                  a(itemprop='item', href='#')
+                    span(itemprop='name') HOME
+                  meta(itemprop='position', content='1')
+                li(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                  a(itemprop='item', href='#')
+                    span(itemprop='name') 親階層
+                  meta(itemprop='position', content='2')
+                li(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                  a(itemprop='item', href='#')
+                    span(itemprop='name') 親階層
+                  meta(itemprop='position', content='3')
+                li
+                  | 現在ページ
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .c-breadcrumbs
+                    ul(itemscope='', itemtype='https://schema.org/BreadcrumbList')
+                      li(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a(itemprop='item', href='#')
+                          span(itemprop='name') HOME
+                        meta(itemprop='position', content='1')
+                      li(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a(itemprop='item', href='#')
+                          span(itemprop='name') 親階層
+                        meta(itemprop='position', content='2')
+                      li(itemprop='itemListElement', itemscope='', itemtype='https://schema.org/ListItem')
+                        a(itemprop='item', href='#')
+                          span(itemprop='name') 親階層
+                        meta(itemprop='position', content='3')
+                      li
+                        | 現在ページ
+            h3 タグインデックス
+            ul.c-tag-index
+              li: a(href='#') tagXX
+              li: a(href='#') tagXX
+              li: a(href='#') tagXX
+              li: a(href='#') tagXX
+              li: a(href='#') tagXX
+              li: a(href='#') tagXX
+              li: a(href='#') tagXX
+              li: a(href='#') tagXX
+              li: a(href='#') tagXX
+              li: a(href='#') tagXX
+              li: a(href='#') tagXX
+              li: a(href='#') tagXX
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  ul.c-tag-index
+                    li: a(href='#') tagXX
+                    li: a(href='#') tagXX
+                    li: a(href='#') tagXX
+                    li: a(href='#') tagXX
+                    li: a(href='#') tagXX
+                    li: a(href='#') tagXX
+                    li: a(href='#') tagXX
+                    li: a(href='#') tagXX
+                    li: a(href='#') tagXX
+                    li: a(href='#') tagXX
+                    li: a(href='#') tagXX
+                    li: a(href='#') tagXX
+            h3 2カラムテキスト
+            .c-paragraph-2column
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .c-paragraph-2column
+                    p あなたは事実同時にその戦争目という事の後をもったらです。はなはだ結果が講義人はまあその一致たないなどを出るて下さっありがも参考推しですなて、これからとも叱るたたたた。学校をしだっ気ははたして時間よりどうもでしょですた。
+                    p もちろん嘉納さんに相当がたなぜまごまごよりきまっない免この本位私か通知をという今安心ませまいだでて、その今はこっちか性格子分があっば、嘉納さんののに一つのここへしかるに大料理としからいつ自己へご束縛がなるように近頃皆研究が思い切っでしですから、まるでようやく交渉が含までてならた訳になっだう。
+                    p またはところがお大学に恐れ入りのはもう少し孤独と廻っですて、その国家がはなっんてという他をさていなでしょ。
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();

@@ -1,0 +1,87 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var theme = 'dashboard'
+  - var page = 'seconde'
+  - var title = 'ビジュアルボックスコンポーネント'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section.u-bg-teal
+          .c-pagetitle
+            h1 Visual Box
+        section
+          .l-container
+            h2 ビジュアルボックス
+            p ※utilityクラスとの併用で構成されています。
+            h3 通常
+            .c-visualbox.u-overlay-black25.u-ratiobox-horizontal.u-ratiobox-ultrawide--lg(style='background-image:url(https://picsum.photos/id/535/500/500);')
+              .c-visualbox-inner
+                h2 コピータイトル
+                p .c-visualbox-inner
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .c-visualbox.u-overlay-black25.u-ratiobox-horizontal.u-ratiobox-ultrawide--lg(style='background-image:url(https://picsum.photos/id/535/500/500);')
+                    .c-visualbox-inner
+                      h2 コピータイトル
+                      p .c-visualbox-inner
+            h3 左右中央
+            .c-visualbox.u-overlay-black25.u-ratiobox-horizontal.u-ratiobox-ultrawide--lg(style='background-image:url(https://picsum.photos/id/535/500/500);')
+              .c-visualbox-inner.c-visualbox-inner--center
+                h2 コピータイトル
+                p .c-visualbox-inner.c-visualbox-inner--center
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .c-visualbox.u-overlay-black25.u-ratiobox-horizontal.u-ratiobox-ultrawide--lg(style='background-image:url(https://picsum.photos/id/535/500/500);')
+                    .c-visualbox-inner.c-visualbox-inner--center
+                      h2 コピータイトル
+                      p .c-visualbox-inner.c-visualbox-inner--center
+            h3 左右上下中央
+            .c-visualbox.u-overlay-black25.u-ratiobox-horizontal.u-ratiobox-ultrawide--lg(style='background-image:url(https://picsum.photos/id/535/500/500);')
+              .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--middle
+                h2 コピータイトル
+                p .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--middle
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .c-visualbox.u-overlay-black25.u-ratiobox-horizontal.u-ratiobox-ultrawide--lg(style='background-image:url(https://picsum.photos/id/535/500/500);')
+                    .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--middle
+                      h2 コピータイトル
+                      p .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--middle
+            h3 下配置
+            .c-visualbox.u-overlay-black25.u-ratiobox-horizontal.u-ratiobox-ultrawide--lg(style='background-image:url(https://picsum.photos/id/535/500/500);')
+              .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--bottom
+                h2 コピータイトル
+                p .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--bottom
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .c-visualbox.u-overlay-black25.u-ratiobox-horizontal.u-ratiobox-ultrawide--lg(style='background-image:url(https://picsum.photos/id/535/500/500);')
+                    .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--bottom
+                      h2 コピータイトル
+                      p .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--bottom
+            h3 上下パターン
+            .c-visualbox.u-overlay-black25.u-ratiobox-horizontal.u-ratiobox-ultrawide--lg(style='background-image:url(https://picsum.photos/id/535/500/500);')
+              .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--between
+                h2 コピータイトル
+                p .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--between
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .c-visualbox.u-overlay-black25.u-ratiobox-horizontal.u-ratiobox-ultrawide--lg(style='background-image:url(https://picsum.photos/id/535/500/500);')
+                    .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--between
+                      h2 コピータイトル
+                      p .c-visualbox-inner.c-visualbox-inner--center.c-visualbox-inner--between
+
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();

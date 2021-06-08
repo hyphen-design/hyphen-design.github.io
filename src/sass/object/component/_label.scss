@@ -3,8 +3,9 @@
   color: $white;
   line-height: 1;
   vertical-align: middle;
-  padding: $spacer/4 $spacer/2;
-  font-size: $font-size-sm;
+  background: $dark;
+  padding: $spacer/4 $spacer/1.5 $spacer/3;
+  font-size: 1.2rem;
   &--small {
     font-size: $font-size-xs;
   }
@@ -14,10 +15,17 @@
   &--rounded {
     border-radius: 50px;
   }
+  & + .c-label {
+    margin-left: .25rem;
+  }
 }
 
 @each $index, $color in $pageColors {
   .c-label--#{$index} {
     background: $color;
   }
+}
+
+.c-label--graylight {
+  background: $grey-400;
 }

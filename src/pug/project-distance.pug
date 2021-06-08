@@ -1,0 +1,101 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'seconde'
+  - var title = '沿革'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section.u-bg-blue
+          .c-pagetitle
+            h1 Distance / History
+        section
+          .l-container
+            h2 プロフィールや沿革
+            h3 沿革
+            .p-distance
+              dl
+                dt 2001.04
+                dd Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              dl
+                dt 2003.06
+                dd Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              dl
+                dt 2003.09
+                dd Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              dl
+                dt 2008.11
+                dd Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .p-distance
+                    dl
+                      dt 2001.04
+                      dd Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    dl
+                      dt 2003.06
+                      dd Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    dl
+                      dt 2003.09
+                      dd Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    dl
+                      dt 2008.11
+                      dd Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            .p-history
+              dl
+                dt 2001
+                dd
+                  dl
+                    dt 4月
+                    dd 株式会社XXX設立
+              dl
+                dt 2003
+                dd
+                  dl
+                    dt 6月
+                    dd 東京支店設立
+                  dl
+                    dt 9月
+                    dd 福岡支店設立
+              dl
+                dt 2008
+                dd
+                  dl
+                    dt 11月
+                    dd 契約件数1万件達成
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .p-history
+                    dl
+                      dt 2001
+                      dd
+                        dl
+                          dt 4月
+                          dd 株式会社XXX設立
+                    dl
+                      dt 2003
+                      dd
+                        dl
+                          dt 6月
+                          dd 東京支店設立
+                        dl
+                          dt 9月
+                          dd 福岡支店設立
+                    dl
+                      dt 2008
+                      dd
+                        dl
+                          dt 11月
+                          dd 契約件数1万件達成
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();

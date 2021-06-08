@@ -5,10 +5,14 @@
 @import "foundation/_functions.scss";
 @import "foundation/_mixin.scss";
 @import "foundation/_basic.scss";
-
+// layout
 @import "layout/_*.scss";
-
+// object
 @import "object/component/_*.scss";
 @import "object/project/_*.scss";
-
+// utility
 @import "utility/_*.scss";
+// state
+@import "state/_*.scss";
+// theme
+@import "theme/_*.scss";

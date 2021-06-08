@@ -1,0 +1,155 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'seconde'
+  - var title = 'テーブル'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section.u-bg-teal
+          .c-pagetitle
+            h1 Table
+        section
+          .l-container
+            h2 テーブル
+            h3 デフォルト
+            table.c-table-default
+              tr
+                th title
+                td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              tr
+                th title
+                td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  table.c-table-default
+                    tr
+                      th title
+                      td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    tr
+                      th title
+                      td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            table.c-table-default
+              thead
+                tr
+                  th title
+                  td thead text...
+              tbody
+                tr
+                  th title
+                  td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                tr
+                  th title
+                  td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  table.c-table-default
+                    thead
+                      tr
+                        th title
+                        td thead text...
+                    tbody
+                      tr
+                        th title
+                        td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      tr
+                        th title
+                        td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            h3 ベーシック
+            table.c-table-basic
+              tr
+                th title
+                td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              tr
+                th title
+                td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  table.c-table-basic
+                    tr
+                      th title
+                      td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    tr
+                      th title
+                      td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            h3 ストライプ
+            table.c-table-striped
+              tr
+                th title
+                td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              tr
+                th title
+                td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              tr
+                th title
+                td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              tr
+                th title
+                td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  table.c-table-striped
+                    tr
+                      th title
+                      td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    tr
+                      th title
+                      td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    tr
+                      th title
+                      td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    tr
+                      th title
+                      td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            h3 可変
+            table.c-table-basic.c-table-variable
+              tr
+                th title
+                td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              tr
+                th title
+                td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  table.c-table-basic.c-table-variable
+                    tr
+                      th title
+                      td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    tr
+                      th title
+                      td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            h3 はみ出た部分を横スクロールさせる
+            .c-table-horizontal
+              table.c-table-basic
+                tr
+                  th title
+                  td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                tr
+                  th title
+                  td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  .c-table-horizontal
+                    table.c-table-basic
+                      tr
+                        th title
+                        td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      tr
+                        th title
+                        td Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();

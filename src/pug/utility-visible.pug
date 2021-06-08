@@ -1,0 +1,57 @@
+extends include/_layout.pug
+
+block vars
+  include include/_config.pug
+  - var page = 'seconde'
+  - var title = '表示/非表示'
+  - var description = 'サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。サイト説明文が入ります。'
+
+block content
+  .theme-dashboard
+    include include/_dashboard-header.pug
+    .l-wrapper
+      include include/_dashboard-navigation.pug
+      main.l-main(role='main')
+        section.u-bg-deeporange
+          .c-pagetitle
+            h1 Visible / Hidden
+        section#visible
+          .l-container.l-container-thin
+            h2 表示/非表示
+            hr.u-separator-gray.u-space-bottom-3
+            h3 表示
+            p.u-visible-xs xs ブロック表示
+            p.u-visible-xs-inline xs-inline インラインブロック表示
+            p.u-visible-sm sm ブロック表示
+            p.u-visible-sm-liline sm-liline インラインブロック表示
+            p.u-visible-md md ブロック表示
+            p.u-visible-md-liline md インラインブロック表示
+            p.u-visible-lg lg ブロック表示
+            p.u-visible-lg-liline lg インラインブロック表示
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  p.u-visible-xs xs ブロック表示
+                  p.u-visible-xs-inline xs-inline インラインブロック表示
+                  p.u-visible-sm sm ブロック表示
+                  p.u-visible-sm-liline sm-liline インラインブロック表示
+                  p.u-visible-md md ブロック表示
+                  p.u-visible-md-liline md インラインブロック表示
+                  p.u-visible-lg lg ブロック表示
+                  p.u-visible-lg-liline lg インラインブロック表示
+            h3 非表示
+            p.u-hidden-xs xs 非表示
+            p.u-hidden-sm sm 非表示
+            p.u-hidden-md md 非表示
+            p.u-hidden-lg lg 非表示
+            pre
+              code
+                :highlight(lang='html'):html-beautify(indent-size=2 inline=''):pug(doctype='html')
+                  p.u-hidden-xs xs 非表示
+                  p.u-hidden-sm sm 非表示
+                  p.u-hidden-md md 非表示
+                  p.u-hidden-lg lg 非表示
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js')
+  script.
+    hljs.initHighlightingOnLoad();
